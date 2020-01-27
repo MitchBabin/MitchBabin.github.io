@@ -1,33 +1,110 @@
-/*Oclare text colors*/
+/*#region Oclare text colors*/
 .oclare-color-1 {
-    color: "#174B83";
+    color: var(--color1);
+}
+
+input.oclare-color-1:hover {
+    color: white;
+    background-color: var(--color1);
+}
+
+input.oclare-color-1:active {
+    color: white;
+    background-color: var(--color1);
 }
 
 .oclare-color-2 {
-    color: "#007AA0";
+    color: var(--color2);
+}
+
+input.oclare-color-2:hover {
+    color: white;
+    background-color: var(--color2);
+}
+
+input.oclare-color-2:active {
+    color: white;
+    background-color: var(--color2);
 }
 
 .oclare-color-3 {
-    color: "#6255A4";
+    color: var(--color3);
+}
+
+input.oclare-color-3:hover {
+    color: white;
+    background-color: var(--color3);
+}
+
+input.oclare-color-3:active {
+    color: white;
+    background-color: var(--color3);
 }
 
 .oclare-color-4 {
-    color: "#9898CB";
+    color: var(--color4);
 }
 
-/*Oclare border colors*/
+input.oclare-color-4:hover {
+    color: white;
+    background-color: var(--color4);
+}
+
+input.oclare-color-4:active {
+    color: white;
+    background-color: var(--color4);
+}
+/*#endregion */
+
+/*#region Oclare border colors*/
 .oclare-border-color-1 {
-    border-color: "#174B83";
+    border-color: var(--color1);
 }
 
 .oclare-border-color-2 {
-    border-color: "#007AA0";
+    border-color: var(--color2);
 }
 
 .oclare-border-color-3 {
-    border-color: "#6255A4";
+    border-color: var(--color3);
 }
 
 .oclare-border-color-4 {
-    border-color: "#9898CB";
+    border-color: var(--color4);
+}
+/*#endregion */
+
+/*#region Oclare Background colors */
+.oclare-background-default {
+    background-color: var(--oclare-background);
+}
+
+.oclare-background-color-1 {
+    background-color: var(--color1);
+}
+
+.oclare-background-color-2 {
+    background-color: var(--color2);
+}
+
+.oclare-background-color-3 {
+    background-color: var(--color3);
+}
+
+.oclare-background-color-4 {
+    background-color: var(--color4);
+}
+/*#endregion */
+
+/*Oclare Theme Colors*/
+:root {
+    --oclare-background: #F1F2F4;
+    --color1: rgb(23, 75, 131);
+    --color1Transparent: rgba(23, 75, 131, 0.5);
+    --color2: rgb(0, 122, 160);
+    --color2Transparent: rgba(0, 122, 160, 0.5);
+    --color3: rgb(98, 85, 164);
+    --color3Transparent: rgb(98, 85, 164, 0.5);
+    --color4: rgb(152, 152, 203);
+    --color4Transparent: rgba(152, 152, 203, 0.5);
 }
