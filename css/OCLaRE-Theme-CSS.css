@@ -3,74 +3,77 @@
     color: var(--color1);
 }
 
-input.oclare-color-1:hover {
-    color: white;
-    background-color: var(--color1);
-}
-
-input.oclare-color-1:active {
-    color: white;
-    background-color: var(--color1);
-}
-
 .oclare-color-2 {
     color: var(--color2);
-}
-
-input.oclare-color-2:hover {
-    color: white;
-    background-color: var(--color2);
-}
-
-input.oclare-color-2:active {
-    color: white;
-    background-color: var(--color2);
 }
 
 .oclare-color-3 {
     color: var(--color3);
 }
 
-input.oclare-color-3:hover {
-    color: white;
-    background-color: var(--color3);
-}
-
-input.oclare-color-3:active {
-    color: white;
-    background-color: var(--color3);
-}
-
 .oclare-color-4 {
     color: var(--color4);
 }
-
-input.oclare-color-4:hover {
-    color: white;
-    background-color: var(--color4);
-}
-
-input.oclare-color-4:active {
-    color: white;
-    background-color: var(--color4);
-}
 /*#endregion */
+
+/*#region Input with oclare color functionality*/
+input.oclare-color-1:hover,
+input.oclare-color-1:active, 
+input.oclare-color-1:focus {
+    color: white;
+    background-color: var(--color1);
+    outline: 5px auto var(--color1Transparent)
+}
+
+input.oclare-color-2:hover,
+input.oclare-color-2:active,
+input.oclare-color-2:focus {
+    color: white;
+    background-color: var(--color2);
+    outline: 5px auto var(--color2Transparent);
+}
+
+input.oclare-color-3:hover,
+input.oclare-color-3:active,
+input.oclare-color-3:focus {
+    color: white;
+    background-color: var(--color3);
+    outline: 5px auto var(--color3Transparent)
+}
+
+input.oclare-color-4:hover,
+input.oclare-color-4:active,
+input.oclare-color-4:focus {
+    color: white;
+    background-color: var(--color4);
+    color: var(--color4);
+    outline: 5px auto var(--color4Transparent)
+}
+/*#endregion*/
 
 /*#region Oclare border colors*/
 .oclare-border-color-1 {
+    border: 1px solid;
     border-color: var(--color1);
+    border-radius: 4px;
 }
 
 .oclare-border-color-2 {
+    border: 1px solid;
     border-color: var(--color2);
+    border-radius: 4px;
 }
 
 .oclare-border-color-3 {
+    border: 1px solid;
     border-color: var(--color3);
+    border-radius: 4px;
 }
 
 .oclare-border-color-4 {
+    border: 1px solid;
     border-color: var(--color4);
+    border-radius: 4px;
 }
 /*#endregion */
 
@@ -97,7 +100,7 @@ input.oclare-color-4:active {
 /*#endregion */
 
 /*#region Oclare Theme Colors*/
-:root {
+:root {    
     --oclare-background: #F1F2F4;
     --color1: rgb(23, 75, 131);
     --color1Transparent: rgba(23, 75, 131, 0.5);
@@ -110,34 +113,6 @@ input.oclare-color-4:active {
 }
 
 /*#endregion */
-
-/*#region Responsive classes*/
-
-@media screen and (max-width: 768px) {
-    .col-xs-hidden {
-        display:none;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .col-sm-hidden {
-        display:none;
-    }
-}
-
-@media screen and (max-width: 1170px) {
-    .col-md-hidden {
-        display:none;
-    }
-}
-
-@media screen and (min-width: 1171px) {
-    .col-lg-hidden {
-        display:none;
-    }
-}
-
-/*#endregion*/
 
 /*Defaults*/
 img {
