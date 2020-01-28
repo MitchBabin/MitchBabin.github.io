@@ -97,6 +97,10 @@ input.oclare-color-4:focus {
 .oclare-background-color-4 {
     background-color: var(--color4);
 }
+
+.oclare-background-color-5 {
+    background-color: white;
+}
 /*#endregion */
 
 /*#region Oclare Theme Colors*/
@@ -118,6 +122,13 @@ input.oclare-color-4:focus {
 img {
     max-width:100%;
 }
+
+.footer {
+    display: flex; 
+    justify-content: center; 
+    align-self: center;
+}
+/*#endregion*/
 
 /*#region Padding and Margin classes*/
 .padding-xs {
