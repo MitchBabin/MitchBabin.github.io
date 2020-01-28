@@ -96,7 +96,7 @@ input.oclare-color-4:active {
 }
 /*#endregion */
 
-/*Oclare Theme Colors*/
+/*#region Oclare Theme Colors*/
 :root {
     --oclare-background: #F1F2F4;
     --color1: rgb(23, 75, 131);
@@ -109,12 +109,35 @@ input.oclare-color-4:active {
     --color4Transparent: rgba(152, 152, 203, 0.5);
 }
 
-/*Responsive classes*/
-@media screen and (max-width: 768) {
+/*#endregion */
+
+/*#region Responsive classes*/
+
+@media screen and (max-width: 768px) {
     .col-xs-hidden {
         display:none;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .col-sm-hidden {
+        display:none;
+    }
+}
+
+@media screen and (min-width: 970px) {
+    .col-md-hidden {
+        display:none;
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .col-lg-hidden {
+        display:none;
+    }
+}
+
+/*#endregion*/
 
 /*Defaults*/
 img {
