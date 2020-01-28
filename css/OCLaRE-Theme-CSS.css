@@ -108,3 +108,15 @@ input.oclare-color-4:active {
     --color4: rgb(152, 152, 203);
     --color4Transparent: rgba(152, 152, 203, 0.5);
 }
+
+/*Responsive classes*/
+@media screen and (max-width: 768) {
+    .col-xs-hidden {
+        display:none;
+    }
+}
+
+/*Defaults*/
+img {
+    max-width:100%;
+}
