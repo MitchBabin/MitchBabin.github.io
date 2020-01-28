@@ -119,19 +119,19 @@ input.oclare-color-4:active {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .col-sm-hidden {
         display:none;
     }
 }
 
-@media screen and (min-width: 970px) {
+@media screen and (max-width: 970px) {
     .col-md-hidden {
         display:none;
     }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (max-width: 1170px) {
     .col-lg-hidden {
         display:none;
     }
