@@ -129,10 +129,17 @@ img {
     align-self: center;
 }
 
+.footer-col {
+    margin-left: .25em;
+    margin-right: .25em;
+}
+
 .read-more {
     display: flex;
     justify-content:flex-end;
     align-items:flex-end;
+    flex-wrap:nowrap;
+    width:100%;
 }
 
 .flex-row {
@@ -142,6 +149,18 @@ img {
 
 #news-header {
     border-radius: 20px 0px 0px 200px;
+}
+
+#oclare-logo {
+    padding-right: 0;
+}
+
+#oclare-copyright {
+    padding-left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: nowrap;
 }
 /*#endregion*/
 
