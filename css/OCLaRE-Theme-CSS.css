@@ -128,6 +128,15 @@ img {
     justify-content: center; 
     align-self: center;
 }
+
+.read-more {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#news-header {
+    border-radius: 20px 0px 0px 200px;
+}
 /*#endregion*/
 
 /*#region Padding and Margin classes*/
