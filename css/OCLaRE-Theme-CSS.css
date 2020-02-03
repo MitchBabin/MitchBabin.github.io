@@ -129,6 +129,10 @@ img {
     align-self: center;
 }
 
+.footer > .footer {
+    padding-left: 1em;
+}
+
 .footer-col {
     margin-left: .25em;
     margin-right: .25em;
@@ -136,15 +140,66 @@ img {
 
 .read-more {
     display: flex;
-    justify-content:flex-end;
-    align-items:flex-end;
-    flex-wrap:nowrap;
-    width:100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 991px) {
+
+    .read-more {
+        width: 100%;
+    }
+
+    #links {
+    }
+
+    .footer > #links > .row > img {
+        max-width: 25%;
+        margin: auto;
+        padding: 1em;
+    }
+
+    .footer > #credits > .row> img {
+        max-width: 75%;
+        margin:auto;
+        padding: .25em;
+    }
+
+    .footer > div > .row {
+        text-align: center;
+    }
 }
 
 .flex-row {
     display: flex;
     flex-wrap: wrap;
+    align-content:center;
+    justify-content:space-around;
+}
+
+.flex-row-nowrap {
+    display:flex;
+    flex-wrap: nowrap;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-column { 
+    flex-direction: column;
+}
+
+.flex-row > img {
+    padding: 1em .5em 1em .5em;
+    max-width: 15%;
+    margin-top: auto;
+    margin-bottom:auto;
+}
+
+#oclare-logo {
+    max-width: 25%;
 }
 
 #news-header {
@@ -525,4 +580,33 @@ img {
     margin-left: 3em;
 }
 
+.margin-auto {
+    margin:auto;
+}
+
+.margin-x-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.margin-y-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.margin-left-auto {
+    margin-left:auto;
+}
+
+.margin-top-auto {
+    margin-top: auto;
+}
+
+.margin-right-auto {
+    margin-right: auto;
+}
+
+.margin-bottom-auto {
+    margin-bottom: auto;
+}
 /*#endregion*/
