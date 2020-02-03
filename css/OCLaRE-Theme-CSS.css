@@ -14,6 +14,9 @@
 .oclare-color-4 {
     color: var(--color4);
 }
+.oclare-color-5 {
+    color: white;
+}
 /*#endregion */
 
 /*#region Input with oclare color functionality*/
@@ -162,6 +165,76 @@ img {
     align-items: flex-end;
     flex-wrap: nowrap;
 }
+
+.menu-spacer {
+    border-radius: 15px 0px 0px 15px;
+}
+
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-box {
+    border-radius: 25px 25px 25px 25px;
+    padding-right: .5em;
+    padding-left: .5em;
+    background-color: var(--color2);
+    color: white;
+    width: 10%;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-icon {
+    max-width: 20%;
+    padding-left: .5em;
+}
+
+.help-bug {
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interface{
+    border-radius: 0px 15px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-out {
+    border-radius: 15px 0px 0px 15px;
+}
+
+.student-interface{
+    border-radius: 0px 15px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.student-holder {
+    padding-right: 0em;
+    padding-left: 0em;
+    padding-bottom: 0em;
+    padding-top: .25em;
+    margin-top: .15em;
+}
+.student-holder2 {
+    padding-top: .15em;
+    padding-left: 0em;
+    padding-bottom: 0em;
+    padding-right: 0em;
+}
+
 /*#endregion*/
 
 /*#region Padding and Margin classes*/
