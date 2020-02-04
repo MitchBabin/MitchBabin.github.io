@@ -178,6 +178,7 @@ img {
 
     #credits > .row > img {
         max-width: 75%;
+        max-height: 60px;
         margin: auto;
         padding: .25em;
     }
@@ -209,7 +210,8 @@ img {
 
 .flex-row > img {
     padding: 1em .5em 1em .5em;
-    max-width: 15%;
+    max-width: 35%;
+    max-height: 45px;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -391,6 +393,10 @@ li:hover {
     border-bottom-left-radius: 25px;
 }
 
+#jac-logo {
+    margin-right: 106px;
+}
+
 #overviewMenu:active,
 #overviewMenu:focus,
 #overviewMenu:hover {
@@ -433,6 +439,46 @@ li:hover {
     background-color: var(--colorReport);
 }
 
+.footer > div > p {
+    color: white;
+}
+
+p > a {
+    text-decoration: none;
+    color: white;
+}
+
+p > a:hover {
+    color: white;
+}
+
+.credit-img {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.credit-img > img {
+    max-width: 75%;
+    max-height: 150px;
+    padding: .5em;
+}
+
+.xs-footer {
+    display: flex;
+    justify-content: center;
+    padding-top: .75em;
+    padding-bottom: .75em;
+}
+
+.flex-xs-footer {
+    justify-content: space-around;
+}
+
+.xs-footer > img {
+    max-width: 50%;
+    max-height: 45px;
+}
 
 /*#endregion*/
 
