@@ -142,6 +142,10 @@ img {
     max-width: 100%;
 }
 
+.background {
+    background-image: url('../Images/teacher_BG.jpg');
+}
+
 .footer {
     display: flex;
     justify-content: center;
@@ -269,12 +273,10 @@ img {
 @media (max-width: 1100px) {
     .menu-icon {
         display: none;
-    }
-    .main-logo {
-        max-width: 50%;
-    }
-    #logo-div {
-        display: none;
+        }
+    .menu-item {
+        flex-wrap: nowrap;
+        font-weight: normal;
     }
 }
 
