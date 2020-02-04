@@ -680,3 +680,11 @@ img {
     margin-bottom: auto;
 }
 /*#endregion*/
+
+/*#region Logo div*/
+#logo-div {
+    height: 20px;
+    background: radial-gradient(circle 20px at 50% -50%,var(--oclare-background),var(--oclare-background) 20px, var(--color1) 20px);
+    background-repeat: no-repeat;
+    padding: 0;
+}
