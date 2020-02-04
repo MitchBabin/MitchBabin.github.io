@@ -162,16 +162,13 @@ img {
         width: 100%;
     }
 
-    #links {
-    }
-
-    .footer > #links > .row > img {
+    #links > .row > img {
         max-width: 25%;
         margin: auto;
         padding: 1em;
     }
 
-    .footer > #credits > .row> img {
+    #credits > .row> img {
         max-width: 75%;
         margin:auto;
         padding: .25em;
