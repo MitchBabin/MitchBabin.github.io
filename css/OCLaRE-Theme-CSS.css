@@ -257,11 +257,25 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 
 .menu-icon {
-    max-width: 20%;
+    max-width: 25%;
     padding-left: .5em;
+    flex-shrink: 0;
+}
+
+@media (max-width: 1100px) {
+    .menu-icon {
+        display: none;
+    }
+    .main-logo {
+        max-width: 50%;
+    }
+    #logo-div {
+        display: none;
+    }
 }
 
 .help-bug {
@@ -306,6 +320,7 @@ img {
 
 .dropdown-menu {
     color: black;
+    min-width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
