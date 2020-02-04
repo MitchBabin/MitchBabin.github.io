@@ -343,8 +343,51 @@ img {
 }
 
 li:hover {
-    background: #666;
-}   
+    background: blue;
+}
+
+#overviewMenu:active,
+#overviewMenu:focus,
+#overviewMenu:hover {
+    background-color: var(--colorOverview);
+}
+
+#theoryMenu:active,
+#theoryMenu:focus,
+#theoryMenu:hover {
+    background-color: var(--colorTheory);
+}
+
+#procedureMenu:active,
+#procedureMenu:focus,
+#procedureMenu:hover {
+    background-color: var(--colorProcedure);
+}
+
+#pre-labMenu:active,
+#pre-labMenu:focus,
+#pre-labMenu:hover {
+    background-color: var(--colorPreLab);
+}
+
+#dataMenu:active,
+#dataMenu:focus,
+#dataMenu:hover {
+    background-color: var(--colorData);
+}    
+
+#analysisMenu:active,
+#analysisMenu:focus,
+#analysisMenu:hover {
+    background-color: var(--colorAnalysis);
+}
+
+#reportMenu:active,
+#reportMenu:focus,
+#reportMenu:hover {
+    background-color: var(--colorReport);
+}
+
 
 /*#endregion*/
 
