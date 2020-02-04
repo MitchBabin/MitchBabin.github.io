@@ -117,6 +117,14 @@ input.oclare-color-4:focus {
     --color3Transparent: rgb(98, 85, 164, 0.5);
     --color4: rgb(152, 152, 203);
     --color4Transparent: rgba(152, 152, 203, 0.5);
+    /*Menu Bar Colors*/
+    --colorOverview: #ebb52f;
+    --colorTheory: #79bc2e;
+    --colorProcedure: #cd79b5;
+    --colorPreLab: #6ebbb1;
+    --colorData: #eadd43;
+    --colorAnalysis: #f66455;
+    --colorReport: #0a9901;
 }
 
 /*#endregion */
@@ -289,6 +297,57 @@ img {
     padding-bottom: 0em;
     padding-right: 0em;
 }
+
+.dropdown-menu {
+    color: black;
+}
+
+@media only screen and (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+#overview {
+    background-color: var(--colorOverview);
+}
+
+#theory {
+    background-color: var(--colorTheory);
+}
+
+#procedure {
+    background-color: var(--colorProcedure);
+}
+
+#pre-lab {
+    background-color: var(--colorPreLab);
+}
+
+#data {
+    background-color: var(--colorData);
+}
+
+#analysis {
+    background-color: var(--colorAnalysis);
+}
+
+#report {
+    background-color: var(--colorReport);
+}
+
+.list-group {
+    padding: .25em;
+}
+
+.list-group-item {
+    margin-bottom: .25em;
+    padding: .15em;
+}
+
+li:hover {
+    background: #666;
+}   
 
 /*#endregion*/
 
