@@ -14,6 +14,7 @@
 .oclare-color-4 {
     color: var(--color4);
 }
+
 .oclare-color-5 {
     color: white;
 }
@@ -21,7 +22,7 @@
 
 /*#region Input with oclare color functionality*/
 input.oclare-color-1:hover,
-input.oclare-color-1:active, 
+input.oclare-color-1:active,
 input.oclare-color-1:focus {
     color: white;
     background-color: var(--color1);
@@ -107,7 +108,7 @@ input.oclare-color-4:focus {
 /*#endregion */
 
 /*#region Oclare Theme Colors*/
-:root {    
+:root {
     --oclare-background: #F1F2F4;
     --color1: rgb(23, 75, 131);
     --color1Transparent: rgba(23, 75, 131, 0.5);
@@ -118,31 +119,38 @@ input.oclare-color-4:focus {
     --color4: rgb(152, 152, 203);
     --color4Transparent: rgba(152, 152, 203, 0.5);
     /*Menu Bar Colors*/
-    --colorOverview: #ebb52f;
-    --colorTheory: #79bc2e;
-    --colorProcedure: #cd79b5;
-    --colorPreLab: #6ebbb1;
-    --colorData: #eadd43;
-    --colorAnalysis: #f66455;
-    --colorReport: #0a9901;
+    --colorOverview: rgb(235, 181, 47);
+    --colorOverviewTransparent: rgba(235, 182, 47, 0.5);
+    --colorTheory: rgb(121, 188, 46);
+    --colorTheoryTransparent: rgba(121, 188, 46, 0.5);
+    --colorProcedure: rgb(205, 121, 181);
+    --colorProcedureTransparent: rgba(205, 121, 181, 0.5);
+    --colorPreLab: rgb(110, 187, 177);
+    --colorPreLabTransparent: rgba(110, 187, 177, 0.5);
+    --colorData: rgb(234, 221, 67);
+    --colorDataTransparent: rgba(234, 221, 67, 0.5);
+    --colorAnalysis: rgb(246, 100, 85);
+    --colorAnalysisTransparent: rgba(246, 100, 85, 0.5);
+    --colorReport: rgb(10, 153, 1);
+    --colorReportTransparent: rgba(10, 153, 1, 0.5);
 }
 
 /*#endregion */
 
 /*Defaults*/
 img {
-    max-width:100%;
+    max-width: 100%;
 }
 
 .footer {
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-self: center;
 }
 
-.footer > .footer {
-    padding-left: 1em;
-}
+    .footer > .footer {
+        padding-left: 1em;
+    }
 
 .footer-col {
     margin-left: .25em;
@@ -168,9 +176,9 @@ img {
         padding: 1em;
     }
 
-    #credits > .row> img {
+    #credits > .row > img {
         max-width: 75%;
-        margin:auto;
+        margin: auto;
         padding: .25em;
     }
 
@@ -182,12 +190,12 @@ img {
 .flex-row {
     display: flex;
     flex-wrap: wrap;
-    align-content:center;
-    justify-content:space-around;
+    align-content: center;
+    justify-content: space-around;
 }
 
 .flex-row-nowrap {
-    display:flex;
+    display: flex;
     flex-wrap: nowrap;
 }
 
@@ -195,7 +203,7 @@ img {
     justify-content: flex-end;
 }
 
-.flex-column { 
+.flex-column {
     flex-direction: column;
 }
 
@@ -203,7 +211,7 @@ img {
     padding: 1em .5em 1em .5em;
     max-width: 15%;
     margin-top: auto;
-    margin-bottom:auto;
+    margin-bottom: auto;
 }
 
 #oclare-logo {
@@ -263,7 +271,7 @@ img {
     align-items: center;
 }
 
-.interface{
+.interface {
     border-radius: 0px 15px 0px 0px;
     display: flex;
     justify-content: center;
@@ -274,7 +282,7 @@ img {
     border-radius: 15px 0px 0px 15px;
 }
 
-.student-interface{
+.student-interface {
     border-radius: 0px 15px 0px 0px;
     display: flex;
     justify-content: center;
@@ -288,6 +296,7 @@ img {
     padding-top: .25em;
     margin-top: .15em;
 }
+
 .student-holder2 {
     padding-top: .15em;
     padding-left: 0em;
@@ -300,41 +309,70 @@ img {
 }
 
 @media only screen and (min-width: 768px) {
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
 }
 
 #overview {
-    background-color: var(--colorOverview);
+    background-color: var(--colorOverviewTransparent);
 }
+
+    #overview > li:hover, #overview > li:active, #overview > li:focus {
+        background-color: var(--colorOverview);
+    }
 
 #theory {
-    background-color: var(--colorTheory);
+    background-color: var(--colorTheoryTransparent);
 }
+
+    #theory > li:hover, #theory > li:active, #theory > li:focus {
+        background-color: var(--colorTheory);
+    }
 
 #procedure {
-    background-color: var(--colorProcedure);
+    background-color: var(--colorProcedureTransparent);
 }
+
+    #procedure > li:hover, #procedure > li:active, #procedure > li:focus {
+        background-color: var(--colorProcedure)
+    }
 
 #pre-lab {
-    background-color: var(--colorPreLab);
+    background-color: var(--colorPreLabTransparent);
 }
+
+    #pre-lab > li:hover, #pre-lab > li:active, #pre-lab > li:focus {
+        background-color: var(--colorPreLab);
+    }
 
 #data {
-    background-color: var(--colorData);
+    background-color: var(--colorDataTransparent);
 }
+
+    #data > li:hover, #data > li:active, #data > li:focus {
+        background-color: var(--colorData);
+    }
 
 #analysis {
-    background-color: var(--colorAnalysis);
+    background-color: var(--colorAnalysisTransparent);
 }
 
+    #analysis > li:hover, #analysis > li:active, #analysis > li:focus {
+        background-color: var(--colorAnalysis);
+    }
+
 #report {
-    background-color: var(--colorReport);
+    background-color: var(--colorReportTransparent);
 }
+
+    #report > li:hover, #report > li:active, #report > li:focus {
+        background-color: var(--colorReport);
+    }
 
 .list-group {
     padding: .25em;
+    text-align: center;
 }
 
 .list-group-item {
@@ -343,8 +381,15 @@ img {
 }
 
 li:hover {
-    background: #666;
-}   
+    color: white;
+}
+
+.dropdown-menu.list-group {
+    margin-top: 0;
+    padding-bottom: 20px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
 
 /*#endregion*/
 
@@ -457,7 +502,7 @@ li:hover {
     padding-top: 3em;
 }
 
-.padding-right-0 { 
+.padding-right-0 {
     padding-right: 0;
 }
 
@@ -613,7 +658,7 @@ li:hover {
     margin-right: 3em;
 }
 
-.margin-top-0 { 
+.margin-top-0 {
     margin-top: 0;
 }
 
@@ -710,7 +755,7 @@ li:hover {
 }
 
 .margin-auto {
-    margin:auto;
+    margin: auto;
 }
 
 .margin-x-auto {
@@ -724,7 +769,7 @@ li:hover {
 }
 
 .margin-left-auto {
-    margin-left:auto;
+    margin-left: auto;
 }
 
 .margin-top-auto {
@@ -747,3 +792,4 @@ li:hover {
     background-repeat: no-repeat;
     padding: 0;
 }
+/*#endregion*/
