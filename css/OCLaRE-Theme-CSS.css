@@ -142,6 +142,14 @@ img {
     max-width: 100%;
 }
 
+.vh100 {
+    height: 100vh;
+}
+
+.relative-position {
+    position:relative;
+}
+
 .background {
     /*background-image: url('../Images/teacher_BG.jpg');*/
 
@@ -152,15 +160,57 @@ img {
     z-index:-1;
 }
 
+#gaspesie-background {
+    display:none;
+    position: absolute;
+    right: -50%;
+    top: 0;
+    z-index: -2;
+    overflow: hidden;
+}
+
+#jac-background {
+    display:none;
+    position: absolute;
+    left: -50%;
+    top: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#jac-background > img, #gaspesie-background > img {
+    height: 100%;
+    overflow: hidden;
+}
+
 .footer {
     display: flex;
     justify-content: center;
     align-self: center;
+    margin-bottom: 0;
 }
 
-    .footer > .footer {
-        padding-left: 1em;
+@media (max-width:1199px) and (min-height:760px) {
+    #footer-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: auto;
     }
+}
+
+@media (min-width:1200px) and (min-height:880px) {
+    #footer-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+}
+
+.footer > .footer {
+    padding-left: 1em;
+}
 
 .footer-col {
     margin-left: .25em;
@@ -286,16 +336,22 @@ img {
 }
 
 .help-bug {
-    border-radius: 15px 0px 0px 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: .25em;
-    padding-bottom: .25em;
+    height:20px;
+}
+
+#help {
+    border-top-left-radius: 15px;
+}
+
+#bug {
+    border-bottom-left-radius: 15px;
 }
 
 .help-bug > img {
-    max-height: 15px;
+    max-height: 80%;
 }
 
 .interface {
@@ -306,7 +362,7 @@ img {
 }
 
 .log-out {
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 25px;
 }
 
 .student-interface {
@@ -514,6 +570,10 @@ p > a:hover {
 .xs-footer > img {
     max-width: 50%;
     max-height: 45px;
+}
+
+.main-logo {
+    padding-top: 0.5em
 }
 
 /*#endregion*/
@@ -911,16 +971,19 @@ p > a:hover {
 /*#endregion*/
 
 /*#region Logo div*/
-#logo-div {
-    height: 20px;
-    background: radial-gradient(
-        circle 20px at 50% -50%,
-        var(--oclare-background),
-        var(--oclare-background) 20px, 
-        var(--color1) 20px);
-    background-repeat: no-repeat;
-    padding: 0;
-}
+
+@media screen and (max-width:1199px) {
+
+    #logo-div {
+        height: 20px;
+        background: radial-gradient(
+            circle 20px at 55% -70%,
+            var(--oclare-background),
+            var(--oclare-background) 20px, 
+            var(--color1) 20px);
+        background-repeat: no-repeat;
+        padding: 0;
+    }
 
     #logo-div::after {
         content: "";
@@ -944,4 +1007,42 @@ p > a:hover {
         border-bottom-left-radius: 25px;
         box-shadow: -10px 0 0 0 var(--color1);
     }
+}
+
+@media screen and (min-width:1200px) {
+
+    #logo-div {
+        height: 20px;
+        background: radial-gradient(
+            circle 20px at 50% -50%,
+            var(--oclare-background),
+            var(--oclare-background) 20px, 
+            var(--color1) 20px);
+        background-repeat: no-repeat;
+        padding: 0;
+    }
+
+    #logo-div::after {
+        content: "";
+        position: absolute;
+        background-color: transparent;
+        right: -20%;
+        height: 10px;
+        width: 20px;
+        border-top-left-radius: 25px;
+        box-shadow: -10px 0 0 0 var(--color1);
+    }
+
+    #logo-div::before {
+        content: "";
+        position: absolute;
+        background-color: transparent;
+        top: 10px;
+        right: -20%;
+        height: 10px;
+        width: 20px;
+        border-bottom-left-radius: 25px;
+        box-shadow: -10px 0 0 0 var(--color1);
+    }
+}
 /*#endregion*/
