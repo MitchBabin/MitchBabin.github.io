@@ -14,7 +14,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="Bootstrap\js\bootstrap.min.js"></script>
+    <!-- <script src="Bootstrap\js\bootstrap.min.js"></script> -->
 </head>
 <body>
     <div class="background">
@@ -25,11 +25,10 @@
         <div class="row">
             <img src="Images\OCLaRE_Logo.png" class="col-md-2 col-sm-2 main-logo">
         </div>
-        <!--Navbar-->
-        <div class="row">
+        <!--Navbar Desktop-->
+        <div class="row hidden-sm hidden-xs">
             <div class="row">
                 <div class="col-md-1 col-sm-1" id="logo-div">
-
                 </div>
                 <div class="col-md-10 col-sm-10 menu-spacer padding-left-lg">
                     <div class="row">
@@ -156,6 +155,113 @@
                 </div>
             </div>
         </div>
+        <!--Navbar Other-->
+        <nav class="navbar navbar-default hidden-md hidden-lg">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-expanded="false" aria-controls="navbarContent">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hidden-sm">Test</a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbarContent">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Interface <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Teacher</a>
+                            </li>
+                            <li>
+                                <a href="#">Student</a>
+                            </li>
+                            <li>
+                                <a href="#">Log-out</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Overview <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Test 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Theory <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Test 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Procedure<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Test 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Pre-Lab<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Test 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Data<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Test 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Analysis<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Test 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Report<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Test 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Test 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>   
+        </nav>
         <!--Content-->
         <div class="row margin-bottom-lg">
             <div class="container-fluid oclare-background-color-5">
