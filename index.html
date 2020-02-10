@@ -16,301 +16,303 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>    
-    <div class="container-fluid">        
-        <div class="container oclare-background-default padding-top-md vh100 relative-position">
+    <div class="layout" id="home">
+        <div id="left-background"></div>
+        <div>
+            <div class="oclare-background-default padding-top-md vh100 relative-position">
 
-            <!-- Top Row -->
-            <div class="row padding-sm">
+                <!-- Top Row -->
+                <div class="row padding-sm">
 
-                <!-- LOGO -->
-                <div class="col-sm-12 col-md-3">
-                    <a href="#">
-                        <img src="Images\OCLaRE_Logo.png" class="img-responsive media-object" alt="Logo">
-                    </a>
-                </div>
+                    <!-- LOGO -->
+                    <div class="col-sm-12 col-md-3">
+                        <a href="#">
+                            <img src="Images\OCLaRE_Logo.png" class="img-responsive media-object" alt="Logo">
+                        </a>
+                    </div>
 
-                <!-- Placeholder image -->
-                <div class="col-md-3 hidden-sm hidden-xs">
-                    <!-- TODO: Fix image layout -->
-                    <div class="media row">
-                        <img src="Images\adult-biology-chemical-chemist-356040.jpg" class="img-fluid" alt="Student Chemist">
+                    <!-- Placeholder image -->
+                    <div class="col-md-3 hidden-sm hidden-xs">
+                        <!-- TODO: Fix image layout -->
+                        <div class="media row">
+                            <img src="Images\adult-biology-chemical-chemist-356040.jpg" class="img-fluid" alt="Student Chemist">
+                        </div>
+                    </div>
+
+                    <!-- Login Form for medium to large screens -->
+                    <div class="col-md-6 hidden-sm hidden-xs">
+                        <form class="form-horizontal" action="" method="POST">
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label" for="email">Email:&nbsp;</label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="email" id="email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label" for="password">Password:&nbsp;</label>
+                                <div class="col-sm-9">
+                                    <input type="password" name="password" id="password" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <input class="btn btn-outline-default oclare-color-1 oclare-border-color-1" type="submit" value="Login">
+                                    <input class="btn btn-outline-default oclare-color-2 oclare-border-color-2" type="submit" value="Sign Up">
+                                    <input class="btn btn-outline-default oclare-color-3 oclare-border-color-3" type="submit" value="Lost Password">
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
 
-                <!-- Login Form for medium to large screens -->
-                <div class="col-md-6 hidden-sm hidden-xs">
-                    <form class="form-horizontal" action="" method="POST">
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label" for="email">Email:&nbsp;</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="email" id="email" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label" for="password">Password:&nbsp;</label>
-                            <div class="col-sm-10">
-                                <input type="password" name="password" id="password" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-offset-2 col-md-10">
-                                <input class="btn btn-outline-default oclare-color-1 oclare-border-color-1" type="submit" value="Login">
-                                <input class="btn btn-outline-default oclare-color-2 oclare-border-color-2" type="submit" value="Sign Up">
-                                <input class="btn btn-outline-default oclare-color-3 oclare-border-color-3" type="submit" value="Lost Password">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+                <!--About\News-->
+                <div class="container-fluid padding-md oclare-background-default">
+                    <div class="col-md-7 oclare-background-color-5">
 
-            <!--About\News-->
-            <div class="container-fluid row padding-md oclare-background-default">
-                <div class="col-md-7 oclare-background-color-5">
-
-                    <!--About OCLaRE-->
-                    <div class="container-fluid padding-y-sm">
-                        <p class="text-justify">
-                            Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum.
-                            Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi.
-                            At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere.
-                            Cras mattis iudicium purus sit amet fermentum. Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum.
-                            Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi.
-                            At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere.
-                            Cras mattis iudicium purus sit amet fermentum. Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum.
-                            Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi.
-                            At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere.
-                            Cras mattis iudicium purus sit amet fermentum.
-                        </p>
-                        <div class="read-more">
-                            <a href="#">read more...</a>
+                        <!--About OCLaRE-->
+                        <div class="container-fluid padding-y-sm">
+                            <p class="text-justify">
+                                Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum.
+                                Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi.
+                                At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere.
+                                Cras mattis iudicium purus sit amet fermentum. Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum.
+                                Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi.
+                                At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere.
+                                Cras mattis iudicium purus sit amet fermentum. Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum.
+                                Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi.
+                                At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere.
+                                Cras mattis iudicium purus sit amet fermentum.
+                            </p>
+                            <div class="read-more">
+                                <a href="#">read more...</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Second login form for small screens-->
-                <div class="visible-xs visible-sm col-sm-12 container margin-y-md oclare-border-color-1">
-                    <form class="form-horizontal padding-y-sm" action="" method="POST">
-                        <div class="form-group">
-                            <h4><label class="control-label col-sm-2">Login:</label></h4>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label" for="email">Email:&nbsp;</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="email" id="email" class="form-control">
+                    <!-- Second login form for small screens-->
+                    <div class="visible-xs visible-sm col-sm-12 container margin-y-md oclare-border-color-1">
+                        <form class="form-horizontal padding-y-sm" action="" method="POST">
+                            <div class="form-group">
+                                <h4><label class="control-label col-sm-2">Login:</label></h4>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label" for="password">Password:&nbsp;</label>
-                            <div class="col-sm-10">
-                                <input type="password" name="password" id="password" class="form-control">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="email">Email:&nbsp;</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="email" id="email" class="form-control">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <input class="btn btn-outline-default oclare-color-1 oclare-border-color-1" type="submit" value="Login">
-                                <input class="btn btn-outline-default oclare-color-2 oclare-border-color-2" type="submit" value="Sign Up">
-                                <input class="btn btn-outline-default oclare-color-3 oclare-border-color-3" type="submit" value="Lost Password">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="password">Password:&nbsp;</label>
+                                <div class="col-sm-10">
+                                    <input type="password" name="password" id="password" class="form-control">
+                                </div>
                             </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-md-5 col-sm-12">
-                    <!--News-->
-                    <div class="container-fluid oclare-background-color-5">
-                        <div class="row">
-                            <!--News Header-->
-                            <div class="col-md-offset-8 col-md-4 col-lg-offset-8 col-lg-4 col-sm-12 col-xs-12 oclare-background-default" id="news-header">
-                                <h4 class="oclare-color-1">News:</h4>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <input class="btn btn-outline-default oclare-color-1 oclare-border-color-1" type="submit" value="Login">
+                                    <input class="btn btn-outline-default oclare-color-2 oclare-border-color-2" type="submit" value="Sign Up">
+                                    <input class="btn btn-outline-default oclare-color-3 oclare-border-color-3" type="submit" value="Lost Password">
+                                </div>
                             </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <!--Articles-->
-                            <div class="container-fluid oclare-background-color-5 margin-sm">
-                                <div class="row padding-y-sm">
-                                    <!--Article 1-->
-                                    <div class="col-xs-12 col-lg-12 padding-x-xs">
-                                        <h4 class="oclare-color-1"><em>Article Title:........</em></h4>
-                                    </div>
+                        </form>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <!--News-->
+                        <div class="container-fluid oclare-background-color-5">
+                            <div class="row">
+                                <!--News Header-->
+                                <div class="col-md-offset-8 col-md-4 col-lg-offset-8 col-lg-4 col-sm-12 col-xs-12 oclare-background-default" id="news-header">
+                                    <h4 class="oclare-color-1">News:</h4>
                                 </div>
-                                <div class="row flex-row">
-                                    <div class="col-md-8 col-sm-12 col-xs-12 padding-left-0">
-                                        <img src="Images/Placeholder4Articel.jpg" class="media-object">
+                            </div>
+                            <div class="row">
+                                <!--Articles-->
+                                <div class="container-fluid oclare-background-color-5 margin-sm">
+                                    <div class="row padding-y-sm">
+                                        <!--Article 1-->
+                                        <div class="col-xs-12 col-lg-12 padding-x-xs">
+                                            <h4 class="oclare-color-1"><em>Article Title:........</em></h4>
+                                        </div>
                                     </div>
-                                    <div class="col-md-4 col-sm-12 col-xs-12 read-more">
-                                        <a href="#">read more...</a>
+                                    <div class="row flex-row">
+                                        <div class="col-md-8 col-sm-12 col-xs-12 padding-left-0">
+                                            <img src="Images/Placeholder4Articel.jpg" class="media-object">
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 col-xs-12 read-more">
+                                            <a href="#">read more...</a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row padding-y-sm">
-                                    <!--Article 2-->
-                                    <div class="col-xs-12 col-lg-12 padding-x-xs">
-                                        <h4 class="oclare-color-1"><em>Article Title:........</em></h4>
+                                    <div class="row padding-y-sm">
+                                        <!--Article 2-->
+                                        <div class="col-xs-12 col-lg-12 padding-x-xs">
+                                            <h4 class="oclare-color-1"><em>Article Title:........</em></h4>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row flex-row">
-                                    <div class="col-md-8 col-sm-12 col-xs-12 padding-left-0">
-                                        <img src="Images/Placeholder4Articel.jpg" class="media-object">
+                                    <div class="row flex-row">
+                                        <div class="col-md-8 col-sm-12 col-xs-12 padding-left-0">
+                                            <img src="Images/Placeholder4Articel.jpg" class="media-object">
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 col-xs-12 read-more">
+                                            <a href="#">read more...</a>
+                                        </div>
                                     </div>
-                                    <div class="col-md-4 col-sm-12 col-xs-12 read-more">
-                                        <a href="#">read more...</a>
+                                    <div class="row padding-y-sm">
+                                        <!--Article 3-->
+                                        <div class="col-xs-12 col-lg-12 padding-x-xs">
+                                            <h4 class="oclare-color-1"><em>Article Title:........</em></h4>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row padding-y-sm">
-                                    <!--Article 3-->
-                                    <div class="col-xs-12 col-lg-12 padding-x-xs">
-                                        <h4 class="oclare-color-1"><em>Article Title:........</em></h4>
-                                    </div>
-                                </div>
-                                <div class="row flex-row">
-                                    <div class="col-md-8 col-sm-12 col-xs-12 padding-left-0">
-                                        <img src="Images/Placeholder4Articel.jpg" class="media-object">
-                                    </div>
-                                    <div class="col-md-4 col-sm-12 col-xs-12 read-more">
-                                        <a href="#">read more...</a>
+                                    <div class="row flex-row">
+                                        <div class="col-md-8 col-sm-12 col-xs-12 padding-left-0">
+                                            <img src="Images/Placeholder4Articel.jpg" class="media-object">
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 col-xs-12 read-more">
+                                            <a href="#">read more...</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--Footer-->
-            <!--Desktop or Greater-->
-            <div class="hidden-sm hidden-xs row oclare-background-color-2 footer flex-row flex-row-nowrap padding-y-xs" id="footer-bar">
-                <!--OCLaRE Logo-->
-                <div class="footer footer-col">
-                    <a></a>
-                    <img src="Images/OCLaRE_Icon(Blue-copyright).png" class="oclare-background-color-2">
-                    <!--<p class="oclare-color-1 margin-bottom-0">Copyright&nbsp;2020&nbsp;&copy;</p>-->
-                </div>
-                <!--CG&I Logo-->
-                <div class="footer footer-col">
-                    <a></a>
-                    <img src="Images/CegepGaspesie_logo.png" class="oclare-background-color-2">
-                </div>
-                <!--Quebec Logo-->
-                <div class="footer footer-col">
-                    <a></a>
-                    <img src="Images/Quebec_Logo.png" class="oclare-background-color-2">
-                </div>
-                <!--JAC Logo-->
-                <div class="footer footer-col" id="jac-logo">
-                    <a></a>
-                    <img src="Images/JAC_Logo(Blue).png" class="oclare-background-color-2">
-                </div>
-
-                <div class="footer flex-row flex-row-nowrap flex-end footer-col">
-                    <!--EN-->
-                    <div class="flex-row"><p class="margin-0"><a>EN</a>&nbsp;|&nbsp;<a>FR</a></p></div>
-
-                    <!--Contact us-->
-                    <a></a>
-                    <img src="Images/Icons/envelope-regular.png" class="oclare-background-color-2">
-
-                    <!--Report Bug-->
-                    <a></a>
-                    <img src="Images/Icons/bug-white.png" class="oclare-background-color-2">
-
-                    <!--Help-->
-                    <a></a>
-                    <img src="Images/Icons/question-white.png" class="oclare-background-color-2">
-                </div>
-            </div>
-
-            <!--Tablet-->
-            <div class="visible-sm row oclare-background-color-2 footer">
-                <div class="col-sm-offset-2 col-sm-4" id="credits">
-                    <!--Oclare Logo-->
-                    <div class="row">
+                <!--Footer-->
+                <!--Desktop or Greater-->
+                <div class="hidden-sm hidden-xs row oclare-background-color-2 footer flex-row flex-row-nowrap padding-y-xs" id="footer-bar">
+                    <!--OCLaRE Logo-->
+                    <!--<div class="footer footer-col">
                         <a></a>
                         <img src="Images/OCLaRE_Icon(Blue-copyright).png" class="oclare-background-color-2">
+                    </div>-->
+                    <!--CG&I Logo-->
+                    <div class="footer footer-col">
+                        <a></a>
+                        <img src="Images/CegepGaspesie_logo.png" class="oclare-background-color-2">
                     </div>
                     <!--Quebec Logo-->
-                    <div class="row">
+                    <div class="footer footer-col">
+                        <a></a>
+                        <img src="Images/Quebec_Logo.png" class="oclare-background-color-2">
+                    </div>
+                    <!--JAC Logo-->
+                    <div class="footer footer-col" id="jac-logo">
+                        <a></a>
+                        <img src="Images/JAC_Logo(Blue).png" class="oclare-background-color-2">
+                    </div>
+
+                    <div class="footer flex-row flex-row-nowrap flex-end footer-col">
+                        <!--EN-->
+                        <div class="flex-row"><p class="margin-0"><a>EN</a>&nbsp;|&nbsp;<a>FR</a></p></div>
+
+                        <!--Contact us-->
+                        <a></a>
+                        <img src="Images/Icons/envelope-regular.png" class="oclare-background-color-2">
+
+                        <!--Report Bug-->
+                        <a></a>
+                        <img src="Images/Icons/bug-white.png" class="oclare-background-color-2">
+
+                        <!--Help-->
+                        <a></a>
+                        <img src="Images/Icons/question-white.png" class="oclare-background-color-2">
+                    </div>
+                </div>
+
+                <!--Tablet-->
+                <div class="visible-sm row oclare-background-color-2 footer">
+                    <div class="col-sm-offset-2 col-sm-4" id="credits">
+                        <!--Oclare Logo-->
+                        <!--<div class="row">
+                            <a></a>
+                            <img src="Images/OCLaRE_Icon(Blue-copyright).png" class="oclare-background-color-2">
+                        </div>-->
+                        <!--Quebec Logo-->
+                        <div class="row">
+                            <a></a>
+                            <img src="Images/Quebec_Logo.png" class="oclare-background-color-2">
+                        </div>
+                        <!--CG&I Logo-->
+                        <div class="row">
+                            <a></a>
+                            <img src="Images/CegepGaspesie_logo.png" class="oclare-background-color-2">
+                        </div>
+                        <!--JAC Logo-->
+                        <div class="row">
+                            <a></a>
+                            <img src="Images/JAC_Logo(Blue).png" class="oclare-background-color-2">
+                        </div>
+                    </div>
+                    <div class="col-sm-3" id="links">
+                        <!--Contact us-->
+                        <div class="row">
+                            <a></a>
+                            <img src="Images/Icons/envelope-regular.png" class="oclare-background-color-2">
+                        </div>
+                        <!--report bug-->
+                        <div class="row">
+                            <a></a>
+                            <img src="Images/Icons/bug-white.png" class="oclare-background-color-2">
+                        </div>
+                        <!--Help-->
+                        <div class="row">
+                            <a></a>
+                            <img src="Images/Icons/question-white.png" class="oclare-background-color-2">
+                        </div>
+                        <!--EN/FR-->
+                        <div class="row">
+                            <p class="oclare-color-5"><a>EN</a>&nbsp;|&nbsp;<a>FR</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!--Phone-->
+                <div class="visible-xs row oclare-background-color-2 footer">
+                    <div class="flex-row flex-xs-footer">
+                        <!--Contact us-->
+                        <div class="xs-footer">
+                            <a></a>
+                            <img src="Images/Icons/envelope-regular.png" class="oclare-background-color-2">
+                        </div>
+                        <!--report bug-->
+                        <div class="xs-footer">
+                            <a></a>
+                            <img src="Images/Icons/bug-white.png" class="oclare-background-color-2">
+                        </div>
+                        <!--Help-->
+                        <div class="xs-footer">
+                            <a></a>
+                            <img src="Images/Icons/question-white.png" class="oclare-background-color-2">
+                        </div>
+                        <!--EN/FR-->
+                        <div class="xs-footer">
+                            <p class="oclare-color-5"><a>EN</a></p>
+                        </div>
+                        <div class="xs-footer">
+                            <p class="oclare-color-5"><a>FR</a></p>
+                        </div>
+                    </div>
+                    <!--Oclare Logo-->
+                    <!--<div class="row credit-img">
+                        <a></a>
+                        <img src="Images/OCLaRE_Icon(Blue-copyright).png" class="oclare-background-color-2">
+                    </div>-->
+                    <!--Quebec Logo-->
+                    <div class="row credit-img">
                         <a></a>
                         <img src="Images/Quebec_Logo.png" class="oclare-background-color-2">
                     </div>
                     <!--CG&I Logo-->
-                    <div class="row">
+                    <div class="row credit-img">
                         <a></a>
                         <img src="Images/CegepGaspesie_logo.png" class="oclare-background-color-2">
                     </div>
                     <!--JAC Logo-->
-                    <div class="row">
+                    <div class="row credit-img">
                         <a></a>
                         <img src="Images/JAC_Logo(Blue).png" class="oclare-background-color-2">
                     </div>
                 </div>
-                <div class="col-sm-3" id="links">
-                    <!--Contact us-->
-                    <div class="row">
-                        <a></a>
-                        <img src="Images/Icons/envelope-regular.png" class="oclare-background-color-2">
-                    </div>
-                    <!--report bug-->
-                    <div class="row">
-                        <a></a>
-                        <img src="Images/Icons/bug-white.png" class="oclare-background-color-2">
-                    </div>
-                    <!--Help-->
-                    <div class="row">
-                        <a></a>
-                        <img src="Images/Icons/question-white.png" class="oclare-background-color-2">
-                    </div>
-                    <!--EN/FR-->
-                    <div class="row">
-                        <p class="oclare-color-5"><a>EN</a>&nbsp;|&nbsp;<a>FR</a></p>
-                    </div>
-                </div>
-            </div>
-            <!--Phone-->
-            <div class="visible-xs row oclare-background-color-2 footer">
-                <!--Oclare Logo-->
-                <div class="row credit-img">
-                    <a></a>
-                    <img src="Images/OCLaRE_Icon(Blue-copyright).png" class="oclare-background-color-2">
-                </div>
-                <!--Quebec Logo-->
-                <div class="row credit-img">
-                    <a></a>
-                    <img src="Images/Quebec_Logo.png" class="oclare-background-color-2">
-                </div>
-                <!--CG&I Logo-->
-                <div class="row credit-img">
-                    <a></a>
-                    <img src="Images/CegepGaspesie_logo.png" class="oclare-background-color-2">
-                </div>
-                <!--JAC Logo-->
-                <div class="row credit-img">
-                    <a></a>
-                    <img src="Images/JAC_Logo(Blue).png" class="oclare-background-color-2">
-                </div>
-                <div class="flex-row flex-xs-footer">
-                    <!--Contact us-->
-                    <div class="xs-footer">
-                        <a></a>
-                        <img src="Images/Icons/envelope-regular.png" class="oclare-background-color-2">
-                    </div>
-                    <!--report bug-->
-                    <div class="xs-footer">
-                        <a></a>
-                        <img src="Images/Icons/bug-white.png" class="oclare-background-color-2">
-                    </div>
-                    <!--Help-->
-                    <div class="xs-footer">
-                        <a></a>
-                        <img src="Images/Icons/question-white.png" class="oclare-background-color-2">
-                    </div>
-                    <!--EN/FR-->
-                    <div class="xs-footer">
-                        <p class="oclare-color-5"><a>EN</a></p>
-                    </div>
-                    <div class="xs-footer">
-                        <p class="oclare-color-5"><a>FR</a></p>
-                    </div>
-                </div>
             </div>
         </div>
+        <div id="right-background"></div>
     </div>
 </body>
 </html>
