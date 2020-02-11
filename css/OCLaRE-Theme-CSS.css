@@ -200,25 +200,34 @@ img {
 .footer {
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: center;
     margin-bottom: 0;
+    margin:auto;
 }
 
-@media (max-width:1199px) and (min-height:760px) {
+@media (max-width:1199px) and (min-height:670px) {
     #footer-bar {
         position: absolute;
         bottom: 0;
         left: 0;
         margin: auto;
     }
+
+    #main-content {
+        height:100vh;
+    }
 }
 
-@media (min-width:1200px) and (min-height:880px) {
+@media (min-width:1200px) and (min-height:790px) {
     #footer-bar {
         position: absolute;
         bottom: 0;
         left: 0;
         margin: auto;
+    }
+
+    #main-content {
+        height: 100vh;
     }
 }
 
@@ -244,7 +253,7 @@ img {
         width: 100%;
     }
 
-    #links > .row > img {
+    #links > .row > a > img {
         max-width: 25%;
         margin: auto;
         padding: 1em;
@@ -282,9 +291,10 @@ img {
     flex-direction: column;
 }
 
-.flex-row > img {
+.flex-row > a > img {
     padding: 1em .5em 1em .5em;
     width: 33px;
+    min-width: 33px;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -535,7 +545,7 @@ li:hover {
 }
 
 #jac-logo {
-    margin-right: 106px;
+    margin-right: 3px;
 }
 
 #overviewMenu:active,
@@ -585,7 +595,6 @@ li:hover {
 }
 
 p > a {
-    text-decoration: none;
     color: white;
 }
 
@@ -617,7 +626,7 @@ p > a:hover {
     justify-content: space-around;
 }
 
-.xs-footer > img {
+.xs-footer > a > img {
     max-height: 45px;
 }
 
