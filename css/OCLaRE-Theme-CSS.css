@@ -137,7 +137,29 @@ input.oclare-color-4:focus {
 
 /*#endregion */
 
-/*Defaults*/
+/*#region Defaults*/
+.layout {
+    display:grid;
+}
+
+@media (min-width: 768px) {
+    #home {
+        grid-template-columns: 0fr 100% 0fr;
+    }
+}
+
+@media (min-width: 992px) {
+    #home {
+        grid-template-columns: 1fr 800px 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    #home {
+        grid-template-columns: 1fr 1000px 1fr;
+    }
+}
+
 img {
     max-width: 100%;
 }
@@ -151,36 +173,28 @@ img {
 }
 
 .background {
-    /*background-image: url('../Images/teacher_BG.jpg');*/
-
     position:absolute;
     left:0;
     top:0;
-    height:100vh;
     z-index:-1;
-}
-
-#gaspesie-background {
-    display:none;
-    position: absolute;
-    right: -50%;
-    top: 0;
-    z-index: -2;
-    overflow: hidden;
-}
-
-#jac-background {
-    display:none;
-    position: absolute;
-    left: -50%;
-    top: 0;
-    z-index: -1;
-    overflow: hidden;
-}
-
-#jac-background > img, #gaspesie-background > img {
+    width: 100%;
     height: 100%;
-    overflow: hidden;
+    background-image: url('../Images/teacher_BG.jpg');
+    background-size: cover;
+    background-position-y: top;
+    background-position-x: 67%;
+}
+
+#right-background {
+    background-image: url('../Images/extra.jpg');
+    background-size: cover;
+    background-position-x: left;
+}
+
+#left-background {
+    background-image: url('../Images/Campus_summer.jpg');
+    background-size: cover;
+    background-position-x: center;
 }
 
 .footer {
@@ -270,8 +284,7 @@ img {
 
 .flex-row > img {
     padding: 1em .5em 1em .5em;
-    max-width: 35%;
-    max-height: 45px;
+    width: 33px;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -424,57 +437,71 @@ li::marker {
     background-color: var(--colorOverviewTransparent);
 }
 
-    #overview > li:hover, #overview > li:active, #overview > li:focus {
-        background-color: var(--colorOverview);
-    }
+#overview > li:hover, 
+#overview > li:active, 
+#overview > li:focus {
+    background-color: var(--colorOverview);
+}
 
 #theory {
     background-color: var(--colorTheoryTransparent);
 }
 
-    #theory > li:hover, #theory > li:active, #theory > li:focus {
-        background-color: var(--colorTheory);
-    }
+#theory > li:hover, 
+#theory > li:active, 
+#theory > li:focus {
+    background-color: var(--colorTheory);
+}
 
 #procedure {
     background-color: var(--colorProcedureTransparent);
 }
 
-    #procedure > li:hover, #procedure > li:active, #procedure > li:focus {
-        background-color: var(--colorProcedure)
-    }
+#procedure > li:hover, 
+#procedure > li:active, 
+#procedure > li:focus {
+    background-color: var(--colorProcedure)
+}
 
 #pre-lab {
     background-color: var(--colorPreLabTransparent);
 }
 
-    #pre-lab > li:hover, #pre-lab > li:active, #pre-lab > li:focus {
-        background-color: var(--colorPreLab);
-    }
+#pre-lab > li:hover, 
+#pre-lab > li:active, 
+#pre-lab > li:focus {
+    background-color: var(--colorPreLab);
+}
 
 #data {
     background-color: var(--colorDataTransparent);
 }
 
-    #data > li:hover, #data > li:active, #data > li:focus {
-        background-color: var(--colorData);
-    }
+#data > li:hover, 
+#data > li:active, 
+#data > li:focus {
+    background-color: var(--colorData);
+}
 
 #analysis {
     background-color: var(--colorAnalysisTransparent);
 }
 
-    #analysis > li:hover, #analysis > li:active, #analysis > li:focus {
-        background-color: var(--colorAnalysis);
-    }
+#analysis > li:hover, 
+#analysis > li:active, 
+#analysis > li:focus {
+    background-color: var(--colorAnalysis);
+}
 
 #report {
     background-color: var(--colorReportTransparent);
 }
 
-    #report > li:hover, #report > li:active, #report > li:focus {
-        background-color: var(--colorReport);
-    }
+#report > li:hover, 
+#report > li:active, 
+#report > li:focus {
+    background-color: var(--colorReport);
+}
 
 .list-group {
     padding: .25em;
@@ -581,6 +608,7 @@ p > a:hover {
 .xs-footer {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: .75em;
     padding-bottom: .75em;
 }
@@ -590,8 +618,11 @@ p > a:hover {
 }
 
 .xs-footer > img {
-    max-width: 50%;
     max-height: 45px;
+}
+
+.xs-footer > p {
+    margin-bottom: 0;
 }
 
 .main-logo {
@@ -998,11 +1029,11 @@ p > a:hover {
 
     #logo-div {
         height: 20px;
-        background: radial-gradient(
-            circle 20px at 55% -70%,
-            var(--oclare-background),
-            var(--oclare-background) 20px, 
-            var(--color1) 20px);
+        background: radial-gradient( 
+            circle 20px at 55% -85%, 
+            transparent, 
+            transparent 25px, 
+            var(--color1) 20px); 
         background-repeat: no-repeat;
         padding: 0;
     }
@@ -1037,8 +1068,8 @@ p > a:hover {
         height: 20px;
         background: radial-gradient(
             circle 20px at 50% -50%,
-            var(--oclare-background),
-            var(--oclare-background) 20px, 
+            transparent,
+            transparent 20px, 
             var(--color1) 20px);
         background-repeat: no-repeat;
         padding: 0;
