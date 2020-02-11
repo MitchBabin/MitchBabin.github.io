@@ -15,6 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- <script src="Bootstrap\js\bootstrap.min.js"></script> -->
+    <script src="js/menubar.js"></script>
 </head>
 <body>
     <div class="background">
@@ -155,13 +156,13 @@
             </div>
         </div>
         <!--Navbar "Ipad"-->
-        <div class="mNav hidden-xs hidden-md hidden-lg padding-x-md padding-y-sm margin-y-sm">
+        <div class="mNav hidden-xs hidden-md hidden-lg padding-x-md padding-y-sm margin-top-sm">
             <!--Overview Menu-->
             <div href="#" class="dropdown" id="overviewMenu">
                 <div class="menu-item dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
                     <div class="oclare-color-5">Overview</div>
                         <img src="Images/Icons/Overview_Icon.png" class="menu-icon hidden-sm">
-                        <a href="#" class="menu-link"></a>
+                        <!-- <a href="#" class="menu-link"></a> -->
                 </div>
                 <ul class="dropdown-menu list-group" id="overview">
                     <li class="list-group-item">test</li>
@@ -173,7 +174,7 @@
                 <div class="menu-item dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
                     <div class="oclare-color-5">Theory</div>
                         <img src="Images/Icons/Theory_Icon.png" class="menu-icon hidden-sm">
-                        <a href="#" class="menu-link"></a>
+                        <!-- <a href="#" class="menu-link"></a> -->
                 </div>
                 <ul class="dropdown-menu list-group" id="theory">
                     <li class="list-group-item">test</li>
@@ -185,7 +186,7 @@
                 <div class="menu-item dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
                     <div href="#" class="oclare-color-5">Procedure</div>
                         <img src="Images/Icons/Procedure_Icon.png" class="menu-icon hidden-sm">
-                        <a href="#" class="menu-link"></a>
+                        <!-- <a href="#" class="menu-link"></a> -->
                 </div>
                 <ul class="dropdown-menu list-group" id="procedure">
                     <li class="list-group-item">test</li>
@@ -197,7 +198,7 @@
                 <div class="menu-item dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
                     <div href="#" class="oclare-color-5 menu-text">Pre-Lab</div>
                         <img src="Images/Icons/PreLab_Icon.png" class="menu-icon hidden-sm">
-                        <a href="#" class="menu-link"></a>
+                        <!-- <a href="#" class="menu-link"></a> -->
                 </div>
                 <ul class="dropdown-menu list-group" id="pre-lab">
                     <li class="list-group-item">test</li>
@@ -209,7 +210,7 @@
                 <div class="menu-item dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
                     <div class="oclare-color-5">Data</div>
                     <img src="Images/Icons/Data_Icon.png" class="menu-icon hidden-sm">
-                    <a href="#" class="menu-link"></a>
+                    <!-- <a href="#" class="menu-link"></a> -->
                 </div>
                     <ul class="dropdown-menu list-group" id="data">
                         <li class="list-group-item">test</li>
@@ -221,7 +222,7 @@
                 <div class="menu-item dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
                     <div class="oclare-color-5">Analysis</div>
                     <img src="Images/Icons/Analysis_Icon.png" class="menu-icon hidden-sm">
-                    <a href="#" class="menu-link"></a>
+                    <!-- <a href="#" class="menu-link"></a> -->
                 </div>
                 <ul class="dropdown-menu list-group" id="analysis">
                     <li class="list-group-item">test</li>
@@ -233,134 +234,139 @@
                 <div class="menu-item dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
                     <div href="#" class="oclare-color-5">Report</div>
                     <img src="Images/Icons/Report_Icon.png" class="menu-icon hidden-sm">
-                    <a href="#" class="menu-link"></a>
+                    <!-- <a href="#" class="menu-link"></a> -->
                 </div>
                 <ul class="dropdown-menu list-group" id="report">
                     <li class="list-group-item">test</li>
                     <li class="list-group-item">test2</li>
                 </ul>
             </div>
+        </div>
+        <div class="mNav2 hidden-xs hidden-md hidden-lg padding-x-md padding-y-sm margin-bottom-sm">
+            <div id="teacherMini" class="menu-item">
+                <a href="#" id="teacherMini" class="mLink menu-item">Teacher Interface</a>
+            </div>
             <div>
-                <div class="oclare-color-5 interface">
-                    <div>Teacher</div>
-                    <a href="#" class=""></a>
+                <div class="oclare-color-5 menu-item" id="studentMini">
+                    <a href="#" id="studentMini" class="mLink">Student Interface</a>
                 </div> 
             </div>
             <div>
-                <div class="oclare-color-5">
-                    <div>Student</div>
-                    <a href="#" class=""></a>
-                </div> 
-            </div>
-            <div>
-                <div class="oclare-color-5">
-                    <div>Logout</div>
-                    <a href="#" class=""></a>
+                <div class="oclare-color-5 menu-item" id="logoutMini">
+                    <a href="#" id="logoutMini" class="mLink">Logout</a>
                 </div> 
             </div>
         </div>
+        <!--Navbar "XS"-->
         <nav class="navbar oclare-background-color-2 hidden-sm hidden-md hidden-lg">
             <div class="navbar-header">
-                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-expanded="false" aria-controls="navbarContent">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                <button class="navbar-toggle collapsed padding-xs margin-xs" type="button" data-toggle="collapse" data-target="#navbarContent" aria-expanded="false" aria-controls="navbarContent">
+                    <div>
+                        <a class="navbar-brand oclare-color-5 navButton">Menu</a>
+                    </div>
                 </button>
-                <a class="navbar-brand oclare-color-5">Menu</a>
             </div>
             <div class="navbar-collapse collapse" id="navbarContent">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#" class="oclare-color-5">Overview</a>
+                    <li id="teacherMini">
+                        <a href="#" id="teacherMini" class="mLink">Teacher Interface</a>
+                    </li>
+                    <li id="studentMini">
+                        <a href="#" id="studentMini" class="mLink">Student Interface</a>
+                    </li>
+                    <li id="overviewMini">
+                        <a href="#" id="overviewMini" class="mLink">Overview</a>
                     </li>
                     <li>
                         <ul>
-                            <li>
-                                <a href="#" class="mLink">Overview 1</a>
+                            <li id="overviewMini">
+                                <a href="#" id="overviewMini" class="mLink">Overview 1</a>
                             </li>
-                            <li>
-                                <a href="#" class="mLink">Overview 2</a>
+                            <li id="overviewMini">
+                                <a href="#" id="overviewMini" class="mLink">Overview 2</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="oclare-color-5">Theory</a>
+                        <a href="#" id="theoryMini" class="mLink">Theory</a>
                     </li>
                     <li>
                         <ul>
-                            <li>
-                                <a href="#" class="mLink">Theory 1</a>
+                            <li id="theoryMini">
+                                <a href="#" id="theoryMini" class="mLink">Theory 1</a>
                             </li>
-                            <li>
-                                <a href="#" class="mLink">Theory 2</a>
+                            <li id="theoryMini">
+                                <a href="#" id="theoryMini" class="mLink">Theory 2</a>
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#" class="oclare-color-5">Procedure</a>
+                    <li id="procedureMini">
+                        <a href="#" id="procedureMini" class="mLink">Procedure</a>
                     </li>
                     <li>
                         <ul>
-                            <li>
-                                <a href="#" class="mLink">Procedure 1</a>
+                            <li id="procedureMini">
+                                <a href="#" id="procedureMini" class="mLink">Procedure 1</a>
                             </li>
-                            <li>
-                                <a href="#" class="mLink">Procedure 2</a>
+                            <li id="procedureMini">
+                                <a href="#" id="procedureMini" class="mLink">Procedure 2</a>
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#" class="oclare-color-5">Pre-Lab</a>
+                    <li id="preLabMini">
+                        <a href="#" id="preLabMini" class="mLink">Pre-Lab</a>
                     </li>
                     <li>
                         <ul>
-                            <li>
-                                <a href="#" class="mLink">Pre-Lab 1</a>
+                            <li id="preLabMini">
+                                <a href="#" id="preLabMini" class="mLink">Pre-Lab 1</a>
                             </li>
-                            <li>
-                                <a href="#" class="mLink">Pre-Lab 2</a>
+                            <li id="preLabMini">
+                                <a href="#" id="preLabMini" class="mLink">Pre-Lab 2</a>
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#" class="oclare-color-5">Data</a>
+                    <li id="dataMini">
+                        <a href="#" id="dataMini" class="mLink">Data</a>
                     </li>
                     <li>
                         <ul>
-                            <li>
-                                <a href="#" class="mLink">Data 1</a>
+                            <li id="dataMini">
+                                <a href="#" id="dataMini" class="mLink">Data 1</a>
                             </li>
-                            <li>
-                                <a href="#" class="mLink">Data 2</a>
+                            <li id="dataMini">
+                                <a href="#" id="dataMini" class="mLink">Data 2</a>
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#" class="oclare-color-5">Analysis</a>
+                    <li id="analysisMini">
+                        <a href="#" id="analysisMini" class="mLink">Analysis</a>
                     </li>
                     <li>
                         <ul>
-                            <li>
-                                <a href="#" class="mLink">Analysis 1</a>
+                            <li id="analysisMini">
+                                <a href="#" id="analysisMini" class="mLink">Analysis 1</a>
                             </li>
-                            <li>
-                                <a href="#" class="mLink">Analysis 2</a>
+                            <li id="analysisMini">
+                                <a href="#" id="analysisMini" class="mLink">Analysis 2</a>
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#" class="oclare-color-5">Report</a>
+                    <li id="reportMini">
+                        <a href="#" id="reportMini" class="mLink">Report</a>
                     </li>
                     <li>
                         <ul>
-                            <li>
-                                <a href="#" class="mLink">Report 1</a>
+                            <li id="reportMini">
+                                <a href="#" id="reportMini" class="mLink">Report 1</a>
                             </li>
-                            <li>
-                                <a href="#" class="mLink">Report 2</a>
+                            <li id="reportMini">
+                                <a href="#" id="reportMini" class="mLink">Report 2</a>
                             </li>
                         </ul>
+                    </li>
+                    <li id="logoutMini">
+                        <a href="#" id="logoutMini" class="mLink">Logout</a>
                     </li>
                 </ul>
             </div>   

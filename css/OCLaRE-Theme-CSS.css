@@ -418,7 +418,13 @@ img {
 .mNav {
     background-color: var(--color2);
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.mNav2 {
+    background-color: var(--color2);
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
 }
 
 li::marker {
@@ -430,11 +436,18 @@ li::marker {
 }
 .mLink:hover {
     color: #eee;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #overview {
     background-color: var(--colorOverviewTransparent);
+}
+
+#overviewMini:hover, 
+#overviewMini:active, 
+#overviewMini:focus {
+    background-color: var(--colorOverview);
+    /* color: #23527c; */
 }
 
 #overview > li:hover, 
@@ -447,6 +460,13 @@ li::marker {
     background-color: var(--colorTheoryTransparent);
 }
 
+#theoryMini:hover, 
+#theoryMini:active, 
+#theoryMini:focus {
+    background-color: var(--colorTheory);
+    /* color: #23527c; */
+}
+
 #theory > li:hover, 
 #theory > li:active, 
 #theory > li:focus {
@@ -457,10 +477,24 @@ li::marker {
     background-color: var(--colorProcedureTransparent);
 }
 
+#procedureMini:hover, 
+#procedureMini:active, 
+#procedureMini:focus {
+    background-color: var(--colorProcedure);
+    /* color: #23527c; */
+}
+
 #procedure > li:hover, 
 #procedure > li:active, 
 #procedure > li:focus {
-    background-color: var(--colorProcedure)
+    background-color: var(--colorProcedure);
+}
+
+#preLabMini:hover, 
+#preLabMini:active, 
+#preLabMini:focus {
+    background-color: var(--colorPreLab);
+    /* color: #23527c; */
 }
 
 #pre-lab {
@@ -471,6 +505,13 @@ li::marker {
 #pre-lab > li:active, 
 #pre-lab > li:focus {
     background-color: var(--colorPreLab);
+}
+
+#dataMini:hover, 
+#dataMini:active, 
+#dataMini:focus {
+    background-color: var(--colorData);
+    /* color: #23527c; */
 }
 
 #data {
@@ -487,6 +528,13 @@ li::marker {
     background-color: var(--colorAnalysisTransparent);
 }
 
+#analysisMini:hover, 
+#analysisMini:active, 
+#analysisMini:focus {
+    background-color: var(--colorAnalysis);
+    /* color: #23527c; */
+}
+
 #analysis > li:hover, 
 #analysis > li:active, 
 #analysis > li:focus {
@@ -497,10 +545,45 @@ li::marker {
     background-color: var(--colorReportTransparent);
 }
 
+#reportMini:hover, 
+#reportMini:active, 
+#reportMini:focus {
+    background-color: var(--colorReport);
+    /* color: #23527c; */
+}
+
 #report > li:hover, 
 #report > li:active, 
 #report > li:focus {
     background-color: var(--colorReport);
+}
+
+#logoutMini:hover, 
+#logoutMini:active, 
+#logoutMini:focus {
+    background-color: var(--oclare-background);
+    /* color: #23527c; */
+}
+
+#logoutMini:hover, 
+#logoutMini:active, 
+#logoutMini:focus {
+    background-color: var(--oclare-background);
+    color: #23527c;
+}
+
+#teacherMini:hover, 
+#teacherMini:active, 
+#teacherMini:focus {
+    background-color: var(--color1);
+    /* color: #23527c; */
+}
+
+#studentMini:hover, 
+#studentMini:active, 
+#studentMini:focus {
+    background-color: var(--color3);
+    /* color: #23527c; */
 }
 
 .list-group {
