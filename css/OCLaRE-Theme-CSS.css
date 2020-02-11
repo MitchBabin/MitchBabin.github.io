@@ -397,6 +397,28 @@ img {
         display: block;
     }
 }
+@media only screen and (max-width: 766px){
+    .ipad-nav {
+        display: none !important;
+    }
+}
+.mNav {
+    background-color: var(--color2);
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+}
+
+li::marker {
+    color: white;
+}
+.mLink {
+    color: white;
+    text-decoration: none;
+}
+.mLink:hover {
+    color: #eee;
+    text-decoration: underline;
+}
 
 #overview {
     background-color: var(--colorOverviewTransparent);
