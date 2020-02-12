@@ -465,6 +465,12 @@ li::marker {
     text-decoration: none;
 }
 
+#mIcon {
+    padding-left: 10px;
+    max-width: 25px;
+    min-width: 15px;
+}
+
 #overview {
     background-color: var(--colorOverviewTransparent);
 }
