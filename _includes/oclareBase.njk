@@ -1,0 +1,180 @@
+<html lang="en">
+<html>
+    <head>
+    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS Links-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/OCLaRE-Theme-CSS.css">
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div class="layout" id="home">
+            <!--Left-->
+            <div id="left-background"></div>
+            <!--Main-->
+            <div class="oclare-background-default padding-top-md relative-position" id="main-content">
+                {{content | safe}}
+                <!--Footer Area-->
+                <!--Desktop or Greater-->
+                <div class="hidden-sm hidden-xs oclare-background-color-2 footer flex-row flex-row-nowrap padding-top-xs" id="footer-bar">
+                    <!--OCLaRE Logo-->
+                    <!--<div class="footer footer-col">
+                        <a>
+                            <img src="../Images/OCLaRE_Icon(Blue-copyright).png" class="oclare-background-color-2">
+                        </a>
+                    </div>-->
+                    <!--CG&I Logo-->
+                    <div class="footer footer-col">
+                        <a>
+                            <img src="../Images/CegepGaspesie_logo.png" class="oclare-background-color-2">
+                        </a>
+                    </div>
+                    <!--Quebec Logo-->
+                    <div class="footer footer-col">
+                        <a>
+                            <img src="../Images/Quebec_Logo.png" class="oclare-background-color-2">
+                        </a>
+                    </div>
+                    <!--JAC Logo-->
+                    <div class="footer footer-col" id="jac-logo">
+                        <a>
+                            <img src="../Images/JAC_Logo(Blue).png" class="oclare-background-color-2">
+                        </a>
+                    </div>
+                    <div class="footer flex-row flex-row-nowrap flex-end footer-col">
+                        <!--EN-->
+                        <div class="flex-row"><p class="margin-0"><a>EN</a>&nbsp;|&nbsp;<a>FR</a></p></div>
+                        <!--Contact us-->
+                        <a>
+                            <img src="../Images/Icons/envelope-regular.png" class="oclare-background-color-2">
+                        </a>
+                        <!--Report Bug-->
+                        <a>
+                            <img src="../Images/Icons/bug-white.png" class="oclare-background-color-2">
+                        </a>
+                        <!--Help-->
+                        <a>
+                            <img src="../Images/Icons/question-white.png" class="oclare-background-color-2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Tablet-->
+            <div class="visible-sm row oclare-background-color-2 footer">
+                <div class="col-sm-offset-2 col-sm-4" id="credits">
+                    <!--Oclare Logo-->
+                    <!--<div class="row">
+                        <a></a>
+                        <img src="../Images/OCLaRE_Icon(Blue-copyright).png" class="oclare-background-color-2">
+                    </div>-->
+                    <!--Quebec Logo-->
+                    <div class="row">
+                        <a>
+                            <img src="../Images/Quebec_Logo.png" class="oclare-background-color-2">
+                        </a>
+                    </div>
+                    <!--CG&I Logo-->
+                    <div class="row">
+                        <a>
+                            <img src="../Images/CegepGaspesie_logo.png" class="oclare-background-color-2">
+                        </a>
+                    </div>
+                    <!--JAC Logo-->
+                    <div class="row">
+                        <a>
+                            <img src="../Images/JAC_Logo(Blue).png" class="oclare-background-color-2">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-3" id="links">
+                    <!--Contact us-->
+                    <div class="row">
+                        <a>
+                            <img src="../Images/Icons/envelope-regular.png" class="oclare-background-color-2">
+                        </a>
+                    </div>
+                    <!--report bug-->
+                    <div class="row">
+                        <a>
+                            <img src="../Images/Icons/bug-white.png" class="oclare-background-color-2">
+                        </a>
+                    </div>
+                    <!--Help-->
+                    <div class="row">
+                        <a>
+                            <img src="../Images/Icons/question-white.png" class="oclare-background-color-2">
+                        </a>
+                    </div>
+                    <!--EN/FR-->
+                    <div class="row">
+                        <p class="oclare-color-5"><a>EN</a>&nbsp;|&nbsp;<a>FR</a></p>
+                    </div>
+                </div>
+            </div>
+            <!--Phone-->
+            <div class="visible-xs row oclare-background-color-2 footer">
+                <div class="flex-row flex-xs-footer">
+                    <!--Contact us-->
+                    <div class="xs-footer">
+                        <a>
+                            <img src="../Images/Icons/envelope-regular.png" class="oclare-background-color-2">
+                        </a>
+                    </div>
+                    <!--report bug-->
+                    <div class="xs-footer">
+                        <a>
+                            <img src="../Images/Icons/bug-white.png" class="oclare-background-color-2">
+                        </a>
+                    </div>
+                    <!--Help-->
+                    <div class="xs-footer">
+                        <a>
+                            <img src="../Images/Icons/question-white.png" class="oclare-background-color-2">
+                        </a>
+                    </div>
+                    <!--EN/FR-->
+                    <div class="xs-footer">
+                        <p class="oclare-color-5"><a>EN</a></p>
+                    </div>
+                    <div class="xs-footer">
+                        <p class="oclare-color-5"><a>FR</a></p>
+                    </div>
+                </div>
+                <!--Oclare Logo-->
+                <!--<div class="row credit-img">
+                    <a></a>
+                    <img src="../Images/OCLaRE_Icon(Blue-copyright).png" class="oclare-background-color-2">
+                </div>-->
+                <!--Quebec Logo-->
+                <div class="row credit-img">
+                    <a>
+                        <img src="../Images/Quebec_Logo.png" class="oclare-background-color-2">
+                    </a>
+                </div>
+                <!--CG&I Logo-->
+                <div class="row credit-img">
+                    <a>
+                        <img src="../Images/CegepGaspesie_logo.png" class="oclare-background-color-2">
+                    </a>
+                </div>
+                <!--JAC Logo-->
+                <div class="row credit-img">
+                    <a>
+                        <img src="../Images/JAC_Logo(Blue).png" class="oclare-background-color-2">
+                    </a>
+                </div>
+            </div>
+            <!--Right-->
+            <div id="right-background"></div>
+        </div>
+    </body>
+</html>

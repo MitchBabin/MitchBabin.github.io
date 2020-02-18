@@ -1,0 +1,63 @@
+---
+layout: oclareBase.njk
+---
+
+<!-- Top Row -->
+<div class="row padding-sm">
+    <!-- LOGO -->
+    <div class="col-sm-12 col-md-3">
+        <a href="#">
+            <img src="../Images/OCLaRE_Logo.png" class="img-responsive media-object" alt="Logo">
+        </a>
+    </div>
+    {# <!-- Placeholder image -->
+    <div class="col-md-3 hidden-sm hidden-xs">
+        <!-- TODO: Fix image layout -->
+        <div class="media row">
+            <img src="../Images/adult-biology-chemical-chemist-356040.jpg" class="img-fluid" alt="Student Chemist">
+        </div>
+    </div> #}
+</div>
+<!--About\News-->
+<div class="container-fluid padding-md oclare-background-default">
+    <div class="col-md-7 oclare-background-color-5">
+        <!--About OCLaRE-->
+        <div class="container-fluid padding-y-sm">
+            {{content | safe}}
+        </div>
+    </div>
+    <div class="col-md-5 col-sm-12">
+        <!--News/Articles-->
+        <div class="container-fluid oclare-background-color-5">
+            <!--News Header-->
+            <div class="row">
+                <div class="col-md-offset-8 col-md-4 col-lg-offset-8 col-lg-4 col-sm-12 col-xs-12 oclare-background-default" id="news-header">
+                    <h4 class="oclare-color-1">News:</h4>
+                </div>
+            </div>
+            <!--Articles-->
+            <div class="row">
+                <div class="container-fluid oclare-background-color-5 margin-sm">
+                    <!--ForEach Article (Latest 3)-->
+                    {%- for post in collections.post|reverse -%}
+                    {% if loop.index0 < 3 %}
+                        <div class="row padding-y-sm">
+                            <div class="col-xs-12 col-lg-12 padding-x-xs">
+                                <h4 class="oclare-color-1"><em>Article Title: {{ post.data.title }}</em></h4>
+                            </div>                 
+                        </div>
+                        <div class="row flex-row">
+                            <div class="col-md-8 col-sm-12 col-xs-12 padding-left-0">
+                                <!--TODO-->
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-xs-12 read-more">
+                                <a href="{{ post.url }}">read more...</a>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {%- endfor -%}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
