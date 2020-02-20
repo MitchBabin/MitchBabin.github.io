@@ -3,18 +3,18 @@ layout: oclareBase.njk
 ---
 
 <!-- Top Row -->
-<div class="row padding-sm">
+<div class="padding-sm">
     <!-- LOGO -->
     <div class="col-sm-12 col-md-3">
         <a href="#">
-            <img src="../Images/OCLaRE_Logo.png" class="img-responsive media-object" alt="Logo">
+            <img src="/Images/OCLaRE_Logo.png" class="img-responsive media-object" alt="Logo">
         </a>
     </div>
     <!-- Placeholder image -->
     <div class="col-md-3 hidden-sm hidden-xs">
         <!-- TODO: Fix image layout -->
         <div class="media row">
-            <img src="../Images/adult-biology-chemical-chemist-356040.jpg" class="img-fluid" alt="Student Chemist">
+            <img src="/Images/adult-biology-chemical-chemist-356040.jpg" class="img-fluid" alt="Student Chemist">
         </div>
     </div>
     <!-- Login Form for medium to large screens -->
@@ -113,7 +113,7 @@ layout: oclareBase.njk
                         </div>
                         <div class="row flex-row">
                             <div class="col-md-8 col-sm-12 col-xs-12 padding-left-0">
-                                <!--TODO-->
+                                <img src={{ post.data.image }} class="media-object article-card">
                             </div>
                             <div class="col-md-4 col-sm-12 col-xs-12 read-more">
                                 <a href="{{ post.url }}">read more...</a>

@@ -1,4 +1,5 @@
 /*#region Oclare text colors*/
+
 .oclare-color-1 {
     color: var(--color1);
 }
@@ -18,9 +19,13 @@
 .oclare-color-5 {
     color: white;
 }
+
+
 /*#endregion */
 
+
 /*#region Input with oclare color functionality*/
+
 input.oclare-color-1:hover,
 input.oclare-color-1:active,
 input.oclare-color-1:focus {
@@ -53,9 +58,13 @@ input.oclare-color-4:focus {
     color: var(--color4);
     outline: 5px auto var(--color4Transparent)
 }
+
+
 /*#endregion*/
 
+
 /*#region Oclare border colors*/
+
 .oclare-border-color-1 {
     border: 1px solid;
     border-color: var(--color1);
@@ -79,9 +88,13 @@ input.oclare-color-4:focus {
     border-color: var(--color4);
     border-radius: 4px;
 }
+
+
 /*#endregion */
 
+
 /*#region Oclare Background colors */
+
 .oclare-background-default {
     background-color: var(--oclare-background);
 }
@@ -105,9 +118,13 @@ input.oclare-color-4:focus {
 .oclare-background-color-5 {
     background-color: white;
 }
+
+
 /*#endregion */
 
+
 /*#region Oclare Theme Colors*/
+
 :root {
     --oclare-background: #F1F2F4;
     --color1: rgb(23, 75, 131);
@@ -135,11 +152,15 @@ input.oclare-color-4:focus {
     --colorReportTransparent: rgba(10, 153, 1, 0.5);
 }
 
+
 /*#endregion */
 
+
 /*#region Defaults*/
+
 .layout {
-    display:grid;
+    display: grid;
+    height: 100vh;
 }
 
 @media (min-width: 768px) {
@@ -169,17 +190,17 @@ img {
 }
 
 .relative-position {
-    position:relative;
+    position: relative;
 }
 
 .background {
-    position:absolute;
-    left:0;
-    top:0;
-    z-index:-1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
     width: 100%;
     height: 100%;
-    background-image: url('../Images/teacher_BG.jpg');
+    background-image: url('/Images/teacher_BG.jpg');
     background-size: cover;
     background-position-y: top;
     background-position-x: 67%;
@@ -187,7 +208,7 @@ img {
 
 #left-background,
 #right-background {
-   position: relative;
+    position: relative;
 }
 
 #left-background::after,
@@ -202,52 +223,33 @@ img {
 }
 
 #right-background {
-    background-image: url('../Images/extra.jpg');
+    background-image: url('/Images/extra.jpg');
     background-size: cover;
     background-position-x: left;
 }
 
 #left-background {
-    background-image: url('../Images/Campus_summer.jpg');
+    background-image: url('/Images/Campus_summer.jpg');
     background-size: cover;
     background-position-x: center;
+}
+
+#footer-bar {
+    margin-block-start: auto;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0;
-    margin:auto;
 }
 
-@media (max-width:1199px) and (min-height:670px) {
-    #footer-bar {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-    }
-
-    #main-content {
-        height:100vh;
-    }
+#main-content {
+    display: flex;
+    flex-direction: column;
 }
 
-@media (min-width:1200px) and (min-height:790px) {
-    #footer-bar {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-    }
-
-    #main-content {
-        height: 100vh;
-    }
-}
-
-.footer > .footer {
+.footer>.footer {
     padding-left: 1em;
 }
 
@@ -264,25 +266,21 @@ img {
 }
 
 @media (max-width: 991px) {
-
     .read-more {
         width: 100%;
     }
-
-    #links > .row > a > img {
+    #links>.row>a>img {
         max-width: 25%;
         margin: auto;
         padding: 1em;
     }
-
-    #credits > .row > img {
+    #credits>.row>img {
         max-width: 75%;
         max-height: 60px;
         margin: auto;
         padding: .25em;
     }
-
-    .footer > div > .row {
+    .footer>div>.row {
         text-align: center;
     }
 }
@@ -307,7 +305,7 @@ img {
     flex-direction: column;
 }
 
-.flex-row > a > img {
+.flex-row>a>img {
     padding: 1em .5em 1em .5em;
     width: 33px;
     min-width: 33px;
@@ -331,6 +329,7 @@ img {
     align-items: flex-end;
     flex-wrap: nowrap;
 }
+
 
 /*.menu-spacer {
     border-radius: 15px 0px 0px 15px;
@@ -367,18 +366,27 @@ img {
 @media (max-width: 1200px) {
     .menu-icon {
         display: none;
-        }
+    }
     .menu-item {
         flex-wrap: nowrap;
         font-weight: normal;
     }
 }
 
+.article-card {
+    max-height: 90px;
+}
+
+.article-head {
+    max-width: 50%;
+    max-height: 25%;
+}
+
 .help-bug {
     display: flex;
     justify-content: center;
     align-items: center;
-    height:20px;
+    height: 20px;
 }
 
 #help {
@@ -389,7 +397,7 @@ img {
     border-bottom-left-radius: 15px;
 }
 
-.help-bug > img {
+.help-bug>img {
     max-height: 80%;
 }
 
@@ -436,11 +444,13 @@ img {
         display: block;
     }
 }
-@media only screen and (max-width: 766px){
+
+@media only screen and (max-width: 766px) {
     .ipad-nav {
         display: none !important;
     }
 }
+
 .mNav {
     background-color: var(--color2);
     display: grid;
@@ -456,10 +466,12 @@ img {
 li::marker {
     color: white;
 }
+
 .mLink {
     color: white;
     text-decoration: none;
 }
+
 .mLink:hover {
     color: #eee;
     text-decoration: none;
@@ -475,16 +487,16 @@ li::marker {
     background-color: var(--colorOverviewTransparent);
 }
 
-#overviewMini:hover, 
-#overviewMini:active, 
+#overviewMini:hover,
+#overviewMini:active,
 #overviewMini:focus {
     background-color: var(--colorOverview);
     /* color: #23527c; */
 }
 
-#overview > li:hover, 
-#overview > li:active, 
-#overview > li:focus {
+#overview>li:hover,
+#overview>li:active,
+#overview>li:focus {
     background-color: var(--colorOverview);
 }
 
@@ -492,16 +504,16 @@ li::marker {
     background-color: var(--colorTheoryTransparent);
 }
 
-#theoryMini:hover, 
-#theoryMini:active, 
+#theoryMini:hover,
+#theoryMini:active,
 #theoryMini:focus {
     background-color: var(--colorTheory);
     /* color: #23527c; */
 }
 
-#theory > li:hover, 
-#theory > li:active, 
-#theory > li:focus {
+#theory>li:hover,
+#theory>li:active,
+#theory>li:focus {
     background-color: var(--colorTheory);
 }
 
@@ -509,21 +521,21 @@ li::marker {
     background-color: var(--colorProcedureTransparent);
 }
 
-#procedureMini:hover, 
-#procedureMini:active, 
+#procedureMini:hover,
+#procedureMini:active,
 #procedureMini:focus {
     background-color: var(--colorProcedure);
     /* color: #23527c; */
 }
 
-#procedure > li:hover, 
-#procedure > li:active, 
-#procedure > li:focus {
+#procedure>li:hover,
+#procedure>li:active,
+#procedure>li:focus {
     background-color: var(--colorProcedure);
 }
 
-#preLabMini:hover, 
-#preLabMini:active, 
+#preLabMini:hover,
+#preLabMini:active,
 #preLabMini:focus {
     background-color: var(--colorPreLab);
     /* color: #23527c; */
@@ -533,14 +545,14 @@ li::marker {
     background-color: var(--colorPreLabTransparent);
 }
 
-#pre-lab > li:hover, 
-#pre-lab > li:active, 
-#pre-lab > li:focus {
+#pre-lab>li:hover,
+#pre-lab>li:active,
+#pre-lab>li:focus {
     background-color: var(--colorPreLab);
 }
 
-#dataMini:hover, 
-#dataMini:active, 
+#dataMini:hover,
+#dataMini:active,
 #dataMini:focus {
     background-color: var(--colorData);
     /* color: #23527c; */
@@ -550,9 +562,9 @@ li::marker {
     background-color: var(--colorDataTransparent);
 }
 
-#data > li:hover, 
-#data > li:active, 
-#data > li:focus {
+#data>li:hover,
+#data>li:active,
+#data>li:focus {
     background-color: var(--colorData);
 }
 
@@ -560,16 +572,16 @@ li::marker {
     background-color: var(--colorAnalysisTransparent);
 }
 
-#analysisMini:hover, 
-#analysisMini:active, 
+#analysisMini:hover,
+#analysisMini:active,
 #analysisMini:focus {
     background-color: var(--colorAnalysis);
     /* color: #23527c; */
 }
 
-#analysis > li:hover, 
-#analysis > li:active, 
-#analysis > li:focus {
+#analysis>li:hover,
+#analysis>li:active,
+#analysis>li:focus {
     background-color: var(--colorAnalysis);
 }
 
@@ -577,42 +589,42 @@ li::marker {
     background-color: var(--colorReportTransparent);
 }
 
-#reportMini:hover, 
-#reportMini:active, 
+#reportMini:hover,
+#reportMini:active,
 #reportMini:focus {
     background-color: var(--colorReport);
     /* color: #23527c; */
 }
 
-#report > li:hover, 
-#report > li:active, 
-#report > li:focus {
+#report>li:hover,
+#report>li:active,
+#report>li:focus {
     background-color: var(--colorReport);
 }
 
-#logoutMini:hover, 
-#logoutMini:active, 
+#logoutMini:hover,
+#logoutMini:active,
 #logoutMini:focus {
     background-color: var(--oclare-background);
     /* color: #23527c; */
 }
 
-#logoutMini:hover, 
-#logoutMini:active, 
+#logoutMini:hover,
+#logoutMini:active,
 #logoutMini:focus {
     background-color: var(--oclare-background);
     color: #23527c;
 }
 
-#teacherMini:hover, 
-#teacherMini:active, 
+#teacherMini:hover,
+#teacherMini:active,
 #teacherMini:focus {
     background-color: var(--color1);
     /* color: #23527c; */
 }
 
-#studentMini:hover, 
-#studentMini:active, 
+#studentMini:hover,
+#studentMini:active,
 #studentMini:focus {
     background-color: var(--color3);
     /* color: #23527c; */
@@ -629,13 +641,13 @@ li::marker {
 }
 
 .menu-link {
-/* all rules required to make the whole div clickable */ 
-  position:absolute; 
-  width:100%;
-  height:100%;
-  top:0;
-  left: 0;
-  z-index: 1;
+    /* all rules required to make the whole div clickable */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 li:hover {
@@ -695,15 +707,15 @@ li:hover {
     background-color: var(--colorReport);
 }
 
-.footer > div > p {
+.footer>div>p {
     color: white;
 }
 
-p > a {
+p>a {
     color: white;
 }
 
-p > a:hover {
+p>a:hover {
     color: white;
 }
 
@@ -713,7 +725,7 @@ p > a:hover {
     justify-content: center;
 }
 
-.credit-img > img {
+.credit-img>img {
     max-width: 75%;
     max-height: 150px;
     padding: .5em;
@@ -731,11 +743,11 @@ p > a:hover {
     justify-content: space-around;
 }
 
-.xs-footer > a > img {
+.xs-footer>a>img {
     max-height: 45px;
 }
 
-.xs-footer > p {
+.xs-footer>p {
     margin-bottom: 0;
 }
 
@@ -743,9 +755,12 @@ p > a:hover {
     padding-top: 0.5em
 }
 
+
 /*#endregion*/
 
+
 /*#region Padding and Margin classes*/
+
 .padding-0 {
     padding: 0;
 }
@@ -1135,23 +1150,20 @@ p > a:hover {
 .margin-bottom-auto {
     margin-bottom: auto;
 }
+
+
 /*#endregion*/
+
 
 /*#region Logo div*/
 
 @media screen and (max-width:1199px) {
-
     #logo-div {
         height: 20px;
-        background: radial-gradient( 
-            circle 20px at 55% -85%, 
-            transparent, 
-            transparent 25px, 
-            var(--color1) 20px); 
+        background: radial-gradient( circle 20px at 55% -85%, transparent, transparent 25px, var(--color1) 20px);
         background-repeat: no-repeat;
         padding: 0;
     }
-
     #logo-div::after {
         content: "";
         position: absolute;
@@ -1162,7 +1174,6 @@ p > a:hover {
         border-top-left-radius: 25px;
         box-shadow: -10px 0 0 0 var(--color1);
     }
-
     #logo-div::before {
         content: "";
         position: absolute;
@@ -1177,18 +1188,12 @@ p > a:hover {
 }
 
 @media screen and (min-width:1200px) {
-
     #logo-div {
         height: 20px;
-        background: radial-gradient(
-            circle 20px at 50% -50%,
-            transparent,
-            transparent 20px, 
-            var(--color1) 20px);
+        background: radial-gradient( circle 20px at 50% -50%, transparent, transparent 20px, var(--color1) 20px);
         background-repeat: no-repeat;
         padding: 0;
     }
-
     #logo-div::after {
         content: "";
         position: absolute;
@@ -1199,7 +1204,6 @@ p > a:hover {
         border-top-left-radius: 25px;
         box-shadow: -10px 0 0 0 var(--color1);
     }
-
     #logo-div::before {
         content: "";
         position: absolute;
@@ -1212,4 +1216,6 @@ p > a:hover {
         box-shadow: -10px 0 0 0 var(--color1);
     }
 }
+
+
 /*#endregion*/

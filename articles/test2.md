@@ -2,6 +2,7 @@
 tags: post
 layout: oclareArticle.njk
 title: Princeton station
+image: "/Images/PrincetonStation.jpg"
 ---
 
 # Princeton station (NJ Transit)
