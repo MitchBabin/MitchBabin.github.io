@@ -1,0 +1,128 @@
+---
+layout: oclareBase.njk
+---
+
+<!-- Top Row -->
+<div class="padding-sm">
+    <!-- LOGO -->
+    <div class="col-sm-12 col-md-3">
+        <a href="#">
+            <img src="/Images/OCLaRE_Logo.png" class="img-responsive media-object" alt="Logo">
+        </a>
+    </div>
+    <!-- Placeholder image -->
+    <div class="col-md-3 hidden-sm hidden-xs">
+        <!-- TODO: Fix image layout -->
+        <div class="media row">
+            <img src="/Images/adult-biology-chemical-chemist-356040.jpg" class="img-fluid" alt="Student Chemist">
+        </div>
+    </div>
+    <!-- Login Form for medium to large screens -->
+    <div class="col-md-6 hidden-sm hidden-xs">
+        <form class="form-horizontal" action="" method="POST">
+            <div class="form-group">
+                <label class="col-sm-3 control-label" for="email">Email:&nbsp;</label>
+                <div class="col-sm-9">
+                    <input type="text" name="email" id="email" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label" for="password">Password:&nbsp;</label>
+                <div class="col-sm-9">
+                    <input type="password" name="password" id="password" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-3 col-md-9">
+                    <input class="btn btn-outline-default oclare-color-1 oclare-border-color-1" type="submit" value="Login">
+                    <input class="btn btn-outline-default oclare-color-2 oclare-border-color-2" type="submit" value="Sign Up">
+                    <input class="btn btn-outline-default oclare-color-3 oclare-border-color-3" type="submit" value="Lost Password">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!--About\News-->
+<div class="container-fluid padding-md oclare-background-default">
+    <div class="col-md-7 oclare-background-color-5">
+        <!--About OCLaRE-->
+        <div class="container-fluid padding-y-sm">
+            <p class="text-justify">
+                Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum.
+                Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi.
+                At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere.
+                Cras mattis iudicium purus sit amet fermentum. Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum.
+                Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi.
+                At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere.
+                Cras mattis iudicium purus sit amet fermentum. Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum.
+                Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi.
+                At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere.
+                Cras mattis iudicium purus sit amet fermentum.
+            </p>
+            <div class="read-more">
+                {# <a href="#">read more...</a> #}
+            </div>
+        </div>
+    </div>
+    <!-- Second login form for small screens-->
+    <div class="visible-xs visible-sm col-sm-12 container margin-y-md oclare-border-color-1">
+        <form class="form-horizontal padding-y-sm" action="" method="POST">
+            <div class="form-group">
+                <h4><label class="control-label col-sm-2">Login:</label></h4>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="email">Email:&nbsp;</label>
+                <div class="col-sm-10">
+                    <input type="text" name="email" id="email" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="password">Password:&nbsp;</label>
+                <div class="col-sm-10">
+                    <input type="password" name="password" id="password" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <input class="btn btn-outline-default oclare-color-1 oclare-border-color-1" type="submit" value="Login">
+                    <input class="btn btn-outline-default oclare-color-2 oclare-border-color-2" type="submit" value="Sign Up">
+                    <input class="btn btn-outline-default oclare-color-3 oclare-border-color-3" type="submit" value="Lost Password">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-5 col-sm-12">
+        <!--News/Articles-->
+        <div class="container-fluid oclare-background-color-5">
+            <!--News Header-->
+            <div class="row">
+                <div class="col-md-offset-8 col-md-4 col-lg-offset-8 col-lg-4 col-sm-12 col-xs-12 oclare-background-default" id="news-header">
+                    <h4 class="oclare-color-1">News:</h4>
+                </div>
+            </div>
+            <!--Articles-->
+            <div class="row">
+                <div class="container-fluid oclare-background-color-5 margin-sm">
+                    <!--ForEach Article (Latest 3)-->
+                    {%- for post in collections.post|reverse -%}
+                    {% if loop.index0 < 3 %}
+                        <div class="row padding-y-sm">
+                            <div class="col-xs-12 col-lg-12 padding-x-xs">
+                                <h4 class="oclare-color-1"><em>Article Title: {{ post.data.title }}</em></h4>
+                            </div>                 
+                        </div>
+                        <div class="row flex-row">
+                            <div class="col-md-8 col-sm-12 col-xs-12 padding-left-0">
+                                <img src={{ post.data.image }} class="media-object article-card">
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-xs-12 read-more">
+                                <a href="{{ post.url }}">read more...</a>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {%- endfor -%}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
