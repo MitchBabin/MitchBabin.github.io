@@ -249,6 +249,10 @@ img {
     flex-direction: column;
 }
 
+.footer-logo {
+    max-height: 30px;
+}
+
 .footer>.footer {
     padding-left: 1em;
 }
@@ -659,10 +663,6 @@ li:hover {
     padding-bottom: 20px;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
-}
-
-#jac-logo {
-    margin-right: 3px;
 }
 
 #overviewMenu:active,
