@@ -289,6 +289,28 @@ img {
     }
 }
 
+.article-title {
+    min-height: 39px;
+}
+
+.article-pagination {
+    flex-direction: row;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+[aria-current] {
+    background-color: var(--color1);
+    color: white;
+    padding: 0 .25em 0 .25em;
+    border-radius: 25px;
+}
+
+.article-pagination>li {
+    list-style: none;
+}
+
 .flex-row {
     display: flex;
     flex-wrap: wrap;
