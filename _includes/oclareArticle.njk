@@ -1,0 +1,26 @@
+---
+layout: oclareBase.njk
+---
+
+<!-- Top Row -->
+<div class="padding-sm">
+    <!-- LOGO -->
+    <div class="col-sm-12 col-md-3">
+        <a href="/index.html">
+            <img src="/Images/OCLaRE_Logo.png" class="img-responsive media-object" alt="Logo">
+        </a>
+    </div>
+</div>
+<!--About\News-->
+<div class="container-fluid padding-md oclare-background-default">
+    <div class="col-md-7">
+        <div class="padding-sm oclare-background-color-5">
+            <img src="{{ image }}" class="article-head">
+            {{content | safe}}
+        </div>
+    </div>
+    <div class="col-md-5 col-sm-12">
+        <!--News/Articles-->
+        {% include "recentArticles.njk" %}
+    </div>
+</div>
