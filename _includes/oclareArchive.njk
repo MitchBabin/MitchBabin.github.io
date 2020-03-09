@@ -3,30 +3,23 @@ layout: oclareBase.njk
 pagination:
     data: collections.post
     size: 10
+    reverse: true
 ---
-<!-- Top Row -->
-<div class="padding-sm">
-    <!-- LOGO -->
-    <div class="col-sm-12 col-md-3">
-        <a href="/index.html">
-            <img src="/Images/OCLaRE_Logo.png" class="img-responsive media-object" alt="Logo">
-        </a>
-    </div>
-</div>
+{% include "partial/header.njk" %}
 <div class="padding-md oclare-background-default">
-    <div class="col-md-7">
+    <div class="col-md-12">
         <div class="oclare-background-color-5">
-        <div class="row">
-            <h3 class="padding-xs col-md-offset-2 col-md-6">Articles: </h3>
-        </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 oclare-background-default" id="article-header">
+                <h3 class="padding-top-sm oclare-color-1 margin-top-xs">Articles: </h3>
+            </div>
             {% for article in pagination.items %}
                 <div class="padding-y-sm article-title">
                     <div class="col-xs-12 col-lg-12 padding-x-md">
-                        <a href="{{ article.url }}"><h4 class="oclare-color-1"><em>{{ article.data.title }}</em></h4></a>
+                        <a href="{{ article.url }}"><h4 class="oclare-color-2"><em>{{ article.data.title }}</em></h4></a>
                     </div>                 
                 </div>
             {% endfor %}
-            <hr>
+            <hr class="w100">
             <div class="row">
                 <nav aria-labelledby="article-pagination">
                     <h4 class="col-xs-12 padding-x-lg" id="article-pagination">Page:</h4>
@@ -37,17 +30,14 @@ pagination:
                     </ol>
                 </nav>
             </div>
-            <div class="row padding-x-sm flex-row">
-                <form action="https://www.google.com/search" method="get" class="col-md-12">
-                    <input type="hidden" name="q" id="q" value="site:https://oclare.netlify.com">
-                    <input type="text" name="q" id="search-str">
+            <form action="https://www.google.com/search" method="get" class="flex-row flex-end margin-0 oclare-background-color-5">
+                <input type="hidden" name="q" id="q" value="site:https://oclare.netlify.com">
+                <div class="oclare-background-default padding-sm padding-left-md"  id="search-label">
+                    <label for="q" class="control-label oclare-color-1">Search:</label>
+                    <input type="text" name="q" id="search-str" class="margin-x-xs">
                     <button type="submit" class="submit">Search with Google</button>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
-    </div>
-    <div class="col-md-5 col-sm-12">
-        <!--News/Articles-->
-        {% include "recentArticles.njk" %}
     </div>
 </div>

@@ -6,9 +6,7 @@ layout: oclareBase.njk
 <div class="padding-sm">
     <!-- LOGO -->
     <div class="col-sm-12 col-md-3">
-        <a href="#">
-            <img src="/Images/OCLaRE_Logo.png" class="img-responsive media-object" alt="Logo">
-        </a>
+        {% include "partials/logo.njk %}
     </div>
     <!-- Placeholder image -->
     <div class="col-md-3 hidden-sm hidden-xs">
@@ -44,9 +42,9 @@ layout: oclareBase.njk
 </div>
 <!--About\News-->
 <div class="container-fluid padding-md oclare-background-default">
-    <div class="col-md-7 oclare-background-color-5">
+    <div class="col-md-7">
         <!--About OCLaRE-->
-        <div class="container-fluid padding-y-sm">
+        <div class="container-fluid padding-y-sm  oclare-background-color-5">
             <p class="text-justify">
                 Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum.
                 Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi.
@@ -65,25 +63,25 @@ layout: oclareBase.njk
         </div>
     </div>
     <!-- Second login form for small screens-->
-    <div class="visible-xs visible-sm col-sm-12 container margin-y-md oclare-border-color-1">
-        <form class="form-horizontal padding-y-sm" action="" method="POST">
+    <div class="visible-xs visible-sm col-sm-12 margin-top-md">
+        <form class="form-horizontal padding-y-sm oclare-border-color-1" action="" method="POST">
             <div class="form-group">
                 <h4><label class="control-label col-sm-2">Login:</label></h4>
             </div>
             <div class="form-group">
                 <label class="col-sm-2 control-label" for="email">Email:&nbsp;</label>
-                <div class="col-sm-10">
+                <div class="col-sm-9">
                     <input type="text" name="email" id="email" class="form-control">
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-sm-2 control-label" for="password">Password:&nbsp;</label>
-                <div class="col-sm-10">
+                <div class="col-sm-9">
                     <input type="password" name="password" id="password" class="form-control">
                 </div>
             </div>
             <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
+                <div class="col-sm-offset-2 col-sm-9">
                     <input class="btn btn-outline-default oclare-color-1 oclare-border-color-1" type="submit" value="Login">
                     <input class="btn btn-outline-default oclare-color-2 oclare-border-color-2" type="submit" value="Sign Up">
                     <input class="btn btn-outline-default oclare-color-3 oclare-border-color-3" type="submit" value="Lost Password">
@@ -93,6 +91,6 @@ layout: oclareBase.njk
     </div>
     <div class="col-md-5 col-sm-12">
         <!--News/Articles-->
-        {% include "recentArticles.njk" %}
+        {% include "partials/recentArticles.njk" %}
     </div>
 </div>

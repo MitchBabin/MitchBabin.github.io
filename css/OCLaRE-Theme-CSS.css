@@ -185,6 +185,10 @@ img {
     max-width: 100%;
 }
 
+.w100 {
+    width: 100%;
+}
+
 .vh100 {
     height: 100vh;
 }
@@ -345,7 +349,15 @@ img {
 }
 
 #news-header {
-    border-radius: 20px 0px 0px 200px;
+    border-radius: 0px 0px 0px 55px;
+}
+
+#article-header {
+    border-radius: 0px 0px 55px 0px;
+}
+
+#search-label {
+    border-radius: 35px 0px 0px 0px;
 }
 
 #oclare-copyright {
