@@ -1,7 +1,7 @@
 ---
 title: A simple test
 date: 2020-03-10T16:38:19.293Z
-thumbnail: /Images/extra.jpg
+thumbnail: /Images/Placeholder4Articel.jpg
 layout: oclareArticle.njk
 tags:
   - post
