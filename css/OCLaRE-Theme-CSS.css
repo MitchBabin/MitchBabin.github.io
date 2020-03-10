@@ -304,7 +304,8 @@ img {
     align-items: center;
 }
 
-[aria-current] {
+[aria-current],
+[aria-current]:hover {
     background-color: var(--color1);
     color: white;
     padding: 0 .25em 0 .25em;
@@ -763,6 +764,10 @@ p>a:hover {
     max-width: 75%;
     max-height: 150px;
     padding: .5em;
+}
+
+.footer-col img {
+    max-height: 50px;
 }
 
 .xs-footer {
