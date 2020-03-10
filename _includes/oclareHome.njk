@@ -93,36 +93,6 @@ layout: oclareBase.njk
     </div>
     <div class="col-md-5 col-sm-12">
         <!--News/Articles-->
-        <div class="container-fluid oclare-background-color-5">
-            <!--News Header-->
-            <div class="row">
-                <div class="col-md-offset-8 col-md-4 col-lg-offset-8 col-lg-4 col-sm-12 col-xs-12 oclare-background-default" id="news-header">
-                    <h4 class="oclare-color-1">News:</h4>
-                </div>
-            </div>
-            <!--Articles-->
-            <div class="row">
-                <div class="container-fluid oclare-background-color-5 margin-sm">
-                    <!--ForEach Article (Latest 3)-->
-                    {%- for post in collections.post|reverse -%}
-                    {% if loop.index0 < 3 %}
-                        <div class="row padding-y-sm">
-                            <div class="col-xs-12 col-lg-12 padding-x-xs">
-                                <h4 class="oclare-color-1"><em>Article Title: {{ post.data.title }}</em></h4>
-                            </div>                 
-                        </div>
-                        <div class="row flex-row">
-                            <div class="col-md-8 col-sm-12 col-xs-12 padding-left-0">
-                                <img src={{ post.data.image }} class="media-object article-card">
-                            </div>
-                            <div class="col-md-4 col-sm-12 col-xs-12 read-more">
-                                <a href="{{ post.url }}">read more...</a>
-                            </div>
-                        </div>
-                    {% endif %}
-                    {%- endfor -%}
-                </div>
-            </div>
-        </div>
+        {% include "recentArticles.njk" %}
     </div>
 </div>
