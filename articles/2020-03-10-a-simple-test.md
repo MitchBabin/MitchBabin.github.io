@@ -7,3 +7,5 @@ tags:
   - post
 ---
 Let us see what the content appears to be behind the scenes.
+
+![test](/Images/OCLaRE_Icon.png "Test")
