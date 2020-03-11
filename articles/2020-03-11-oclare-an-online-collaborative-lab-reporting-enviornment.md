@@ -4,7 +4,7 @@ date: 2020-01-29T20:09:54.095Z
 image: /Images/oclarelogo.png
 layout: oclareArticle.njk
 tags:
-  - post
+  - post article profweb
 ---
 [Reproduced from Profweb. Profweb shares inspiring teaching practices in addition to providing articles on educational and digital news from the Quebec college network. Profweb also promotes digital resources related to teaching and learning in colleges and offers a calendar of events. Finally, Profweb offers college teachers a free web hosting environment for their educational projects.](https://www.profweb.ca/en/publications/articles/oclare-an-online-collaborative-lab-reporting-environment?utm_source=Infolettre+anglophone&utm_campaign=e74a09c84d-Infolettre_anglophone_COPY_01&utm_medium=email&utm_term=0_f3ae205636-e74a09c84d-138899417)
 
