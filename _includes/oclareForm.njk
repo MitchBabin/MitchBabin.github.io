@@ -1,0 +1,29 @@
+---
+layout: oclareBase.njk
+---
+<!-- Top Row -->
+<div class="padding-sm">
+    <!-- LOGO -->
+    <div class="col-sm-12 col-md-12">
+        <a href="/index.html">
+            <img src="/Images/OCLaRE_Logo.png" class="img-responsive media-object" alt="Logo">
+        </a>
+    </div>
+</div>
+<div class="container-fluid padding-md oclare-background-default">
+    <h1>{{content | safe}}</h1>
+    <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+        <p>
+            <label>Your Name:</br> <input type="text" name="name" /></label>   
+        </p>
+        <p>
+            <label>Your Email:</br> <input type="email" name="email" /></label>
+        </p>
+        <p>
+            <label>Message:</br> <textarea name="message"></textarea></label>
+        </p>
+        <p>
+            <button type="submit">Send</button>
+        </p>
+    </form>
+</div>
