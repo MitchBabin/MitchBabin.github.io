@@ -266,6 +266,11 @@ img {
     margin-right: .25em;
 }
 
+.footer-col img {
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+
 .read-more {
     display: flex;
     justify-content: flex-end;
@@ -746,11 +751,11 @@ li:hover {
     color: white;
 }
 
-p>a {
+.footer a {
     color: white;
 }
 
-p>a:hover {
+.footer a:hover {
     color: white;
 }
 
