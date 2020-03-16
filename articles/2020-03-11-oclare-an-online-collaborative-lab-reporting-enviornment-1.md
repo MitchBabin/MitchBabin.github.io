@@ -1,7 +1,7 @@
 ---
 title: 'OCLaRE, an Online Collaborative Lab Reporting Environment'
 date: 2020-01-29T20:16:33.073Z
-image: /Images/cms/science-in-hd.jpg
+image: /Images/cms/oclare_logo.png
 layout: oclareArticle.njk
 tags:
   - post
