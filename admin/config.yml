@@ -2,9 +2,15 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
+# when using a custom proxy server port
+local_backend: true
+
+# Folder for storing media content
+media_folder: "/Images/cms"
+
 collections:
   - name: "article" # Used in routes, e.g., /admin/collections/blog
-    label: "Articles" # Used in the UI
+    label: "Article" # Used in the UI
     folder: "articles" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -15,5 +21,16 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "oclareArticle.njk"}
       - {label: "Tags", name: "tags", widget: "list", allow_add: false, default: ["post"]}
+  
+  - label: "Pages"
+    name: "pages"
+    files:  
+    - label: "Homepage"
+      name: "homepage"
+      file: "homepage/homepage.yml"
+      create: false
+      delete: false
+      fields:
+        - {label: "About Us", name: "aboutUs", widget: "markdown"}
+        - {label: "Title Image", name: "image", widget: "image"}
       
-media_folder: "Images"
