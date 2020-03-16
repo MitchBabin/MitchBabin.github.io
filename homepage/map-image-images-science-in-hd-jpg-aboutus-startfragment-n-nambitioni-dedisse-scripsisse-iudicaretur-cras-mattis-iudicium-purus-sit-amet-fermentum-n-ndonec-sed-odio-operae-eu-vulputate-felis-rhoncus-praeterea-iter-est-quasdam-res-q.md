@@ -44,4 +44,5 @@ aboutUs: >-
 
   <!--EndFragment-->
 image: /Images/science-in-hd.jpg
+title: Homepage
 ---
