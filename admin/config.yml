@@ -31,6 +31,7 @@ collections:
       create: false
       delete: false
       fields:
+        - {label: "Title", name: "title", widget: "hidden", default: "Homepage"}
         - {label: "About Us", name: "aboutUs", widget: "markdown"}
         - {label: "Title Image", name: "image", widget: "image"}
       
