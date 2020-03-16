@@ -27,11 +27,13 @@ collections:
     files:  
     - label: "Homepage"
       name: "homepage"
-      file: "homepage/homepage.yml"
+      file: "_includes/oclareHome.njk"
       create: false
       delete: false
       fields:
+        - {label: "Layout", name: "layout", widget: "hidden", default: "oclareHome.njk"}
         - {label: "Title", name: "title", widget: "hidden", default: "Homepage"}
         - {label: "About Us", name: "aboutUs", widget: "markdown"}
         - {label: "Title Image", name: "image", widget: "image"}
+        
       
