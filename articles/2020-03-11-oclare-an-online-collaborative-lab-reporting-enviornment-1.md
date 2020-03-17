@@ -14,7 +14,7 @@ Modern paradigms of educational research take the view that learning science, ra
 
 Petra Turkewitsch (Chemistry-GIM), Michael Dugdale (Physics-JAC) and Murray Bronet (Chemistry-JAC) worked with a web programmer, graphic designer, and interns from Computer Science and Graphic Design programs (JAC) to develop the **O**nline **C**ollaborative **La**b **R**eporting **E**nvironment (OCLaRE) utility. This project has been spearheaded by GIM with financial assistance from the *Entente-Canada Québec* beginning in 2016.
 
-###### [![](https://www.profweb.ca/system/cms/files/files/000/004/416/original/oclare-website.jpg)](https://www.profweb.ca/system/cms/files/files/000/004/416/original/oclare-website.jpg "Opens in a new window.")
+[![](https://www.profweb.ca/system/cms/files/files/000/004/416/original/oclare-website.jpg)](https://www.profweb.ca/system/cms/files/files/000/004/416/original/oclare-website.jpg "Opens in a new window.")
 
 ##### A screen capture showing the OCLaRE landing page
 

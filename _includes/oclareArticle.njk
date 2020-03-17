@@ -6,16 +6,20 @@ layout: oclareBase.njk
 <!--About\News-->
 <div class="container-fluid padding-md oclare-background-default">
     <div class="col-md-12">
-        <div class="padding-sm oclare-background-color-5">
-        <h1>{{ title }}</h1>
+        <div class="oclare-background-color-5">
+            <div class="oclare-background-default padding-x-sm">
+                <h1 class="oclare-color-3 margin-0 padding-y-sm">{{ title }}</h1>
+            </div>
             <img src=
             {% if image == '' %}
                 "/Images/cms/ArticlePlaceholder.jpg"            
             {% else %}
                 "{{image}}"
             {% endif %} 
-            class="article-head">
-            {{content | safe}}
+            class="article-head margin-left-sm padding-xs">
+            <div class="container-fluid margin-top-sm" id="article-content">
+                {{content | safe}}
+            </div>
         </div>
     </div>
 </div>

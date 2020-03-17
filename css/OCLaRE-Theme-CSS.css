@@ -218,16 +218,19 @@ img {
     background-size: cover;
     top: 0;
 }
+
 #right-background {
     background-image: url('/Images/extra.jpg');
     background-position-x: left;
     right: 0;
 }
+
 #left-background {
     background-image: url('/Images/Campus_summer.jpg');
     background-position-x: center;
     left: 0;
 }
+
 #left-background::after,
 #right-background::after {
     content: '';
@@ -1260,6 +1263,38 @@ li:hover {
         border-bottom-left-radius: 25px;
         box-shadow: -10px 0 0 0 var(--color1);
     }
+}
+
+
+/*#endregion*/
+
+
+/*#region Article styles */
+
+#article-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#article-content>* {
+    width: 100%;
+    margin: 0.25em 0 0.25em 0;
+    text-align: justify;
+}
+
+#article-content a {
+    width: 100%;
+    height: 100%;
+}
+
+#article-content h1,
+#article-content h2,
+#article-content h3,
+#article-content h4,
+#article-content h5,
+#article-content h6 {
+    text-align: center;
 }
 
 
