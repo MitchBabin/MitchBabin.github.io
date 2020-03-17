@@ -8,7 +8,13 @@ layout: oclareBase.njk
     <div class="col-md-12">
         <div class="padding-sm oclare-background-color-5">
         <h1>{{ title }}</h1>
-            <img src="{{ image }}" class="article-head">
+            <img src=
+            {% if image == '' %}
+                "/Image/cms/ArticlePlaceholder.jpg"            
+            {% else %}
+                "{{image}}"
+            {% endif %} 
+            class="article-head">
             {{content | safe}}
         </div>
     </div>
