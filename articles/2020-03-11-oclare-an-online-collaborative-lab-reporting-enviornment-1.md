@@ -1,7 +1,7 @@
 ---
 title: 'OCLaRE, an Online Collaborative Lab Reporting Environment'
 date: 2020-01-29T20:16:33.073Z
-image: /Images/cms/oclare_logo.png
+image: /Images/cms/OCLaRE_Logo.png
 layout: oclareArticle.njk
 tags:
   - post
@@ -14,7 +14,9 @@ Modern paradigms of educational research take the view that learning science, ra
 
 Petra Turkewitsch (Chemistry-GIM), Michael Dugdale (Physics-JAC) and Murray Bronet (Chemistry-JAC) worked with a web programmer, graphic designer, and interns from Computer Science and Graphic Design programs (JAC) to develop the **O**nline **C**ollaborative **La**b **R**eporting **E**nvironment (OCLaRE) utility. This project has been spearheaded by GIM with financial assistance from the *Entente-Canada Québec* beginning in 2016.
 
-[![](https://www.profweb.ca/system/cms/files/files/000/004/416/original/oclare-website.jpg)](https://www.profweb.ca/system/cms/files/files/000/004/416/original/oclare-website.jpg "Opens in a new window.")A screen capture showing the OCLaRE landing page
+###### [![](https://www.profweb.ca/system/cms/files/files/000/004/416/original/oclare-website.jpg)](https://www.profweb.ca/system/cms/files/files/000/004/416/original/oclare-website.jpg "Opens in a new window.")
+
+##### A screen capture showing the OCLaRE landing page
 
 OCLaRE is a web-based application that enhances the production of a lab report by offering tools for gathering information, planning, analyzing and writing collaborative lab reports. Teachers may customize a lab report by specifying the sections to be included in the report, the type of data to be entered, how the data may be analyzed, identifying the sections of the report that the students are to complete.
 

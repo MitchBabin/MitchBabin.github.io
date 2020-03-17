@@ -19,7 +19,9 @@
     <body>
         <div class="layout" id="home">
             <!--Left-->
-            <div id="left-background"></div>
+            <div id="left">
+                <div id="left-background"></div>
+            </div>
             <!--Main-->
             <div class="oclare-background-default padding-top-md relative-position" id="main-content">
                 {{content | safe}}
@@ -27,7 +29,9 @@
                 {% include "partials/footer.njk" %}
             </div>
             <!--Right-->
-            <div id="right-background"></div>
+            <div id="right">
+                <div id="right-background"></div>
+            </div>
         </div>
     </body>
 </html>

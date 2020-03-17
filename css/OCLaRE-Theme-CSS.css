@@ -163,21 +163,21 @@ input.oclare-color-4:focus {
     height: 100vh;
 }
 
-@media (min-width: 768px) {
-    #home {
-        grid-template-columns: 0fr 100% 0fr;
-    }
+#home {
+    --width: 100%;
+    grid-template-columns: 0fr var(--width) 0fr;
 }
 
 @media (min-width: 992px) {
     #home {
-        grid-template-columns: 1fr 800px 1fr;
+        --width: 800px;
+        grid-template-columns: 1fr var(--width) 1fr;
     }
 }
 
 @media (min-width: 1200px) {
     #home {
-        grid-template-columns: 1fr 1000px 1fr;
+        --width: 1000px;
     }
 }
 
@@ -212,9 +212,22 @@ img {
 
 #left-background,
 #right-background {
-    position: relative;
+    position: fixed;
+    width: calc((100% - var(--width)) / 2);
+    height: 100%;
+    background-size: cover;
+    top: 0;
 }
-
+#right-background {
+    background-image: url('/Images/extra.jpg');
+    background-position-x: left;
+    right: 0;
+}
+#left-background {
+    background-image: url('/Images/Campus_summer.jpg');
+    background-position-x: center;
+    left: 0;
+}
 #left-background::after,
 #right-background::after {
     content: '';
@@ -224,18 +237,6 @@ img {
     width: 100%;
     height: 100%;
     background: radial-gradient(transparent, white);
-}
-
-#right-background {
-    background-image: url('/Images/extra.jpg');
-    background-size: cover;
-    background-position-x: left;
-}
-
-#left-background {
-    background-image: url('/Images/Campus_summer.jpg');
-    background-size: cover;
-    background-position-x: center;
 }
 
 #footer-bar {
