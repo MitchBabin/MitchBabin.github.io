@@ -33,7 +33,5 @@ collections:
       fields:
         - {label: "Layout", name: "layout", widget: "hidden", default: "oclareHome.njk"}
         - {label: "Title", name: "title", widget: "hidden", default: "Homepage"}
-        - {label: "Body", name: "body", widget: "markdown"}
         - {label: "Title Image", name: "image", widget: "image"}
-        
-      
+        - {label: "Body", name: "body", widget: "markdown"}
