@@ -212,9 +212,22 @@ img {
 
 #left-background,
 #right-background {
-    position: relative;
+    position: fixed;
+    width: calc(50% - 500px);
+    height: 100%;
+    background-size: cover;
+    top: 0;
 }
-
+#right-background {
+    background-image: url('/Images/extra.jpg');
+    background-position-x: left;
+    right: 0;
+}
+#left-background {
+    background-image: url('/Images/Campus_summer.jpg');
+    background-position-x: center;
+    left: 0;
+}
 #left-background::after,
 #right-background::after {
     content: '';
@@ -224,18 +237,6 @@ img {
     width: 100%;
     height: 100%;
     background: radial-gradient(transparent, white);
-}
-
-#right-background {
-    background-image: url('/Images/extra.jpg');
-    background-size: cover;
-    background-position-x: left;
-}
-
-#left-background {
-    background-image: url('/Images/Campus_summer.jpg');
-    background-size: cover;
-    background-position-x: center;
 }
 
 #footer-bar {
