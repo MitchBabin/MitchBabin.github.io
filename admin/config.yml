@@ -22,18 +22,18 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "oclareArticle.njk"}
       - {label: "Tags", name: "tags", widget: "list", allow_add: false, default: ["post"]}
   
-  - label: "Pages"
-    name: "pages"
+  - name: "pages"
+    label: "Pages"
     files:  
     - label: "Homepage"
       name: "homepage"
-      file: "_includes/oclareHome.njk"
+      file: "/index.md"
       create: false
       delete: false
       fields:
         - {label: "Layout", name: "layout", widget: "hidden", default: "oclareHome.njk"}
         - {label: "Title", name: "title", widget: "hidden", default: "Homepage"}
-        - {label: "About Us", name: "aboutUs", widget: "markdown"}
+        - {label: "Body", name: "body", widget: "markdown"}
         - {label: "Title Image", name: "image", widget: "image"}
         
       
