@@ -1297,5 +1297,13 @@ li:hover {
     text-align: center;
 }
 
+#article-body {
+    border-top-left-radius: 70px 40px;
+}
+
+#article-title {
+    border-top-left-radius: 70px 50px;
+}
+
 
 /*#endregion*/
