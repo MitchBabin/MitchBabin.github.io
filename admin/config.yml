@@ -34,4 +34,15 @@ collections:
         - {label: "Title", name: "title", widget: "hidden", default: "Homepage"}
         - {label: "About Us", name: "aboutUs", widget: "markdown"}
         - {label: "Title Image", name: "image", widget: "image"}
+  
+  - name: "documentation" # Used in routes, e.g., /admin/collections/blog
+    label: "Documentation" # Used in the UI
+    folder: "documentation" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "oclareArticle.njk"}
+      - {label: "Tags", name: "tags", widget: "list", allow_add: false, default: ["documentation"]}
       
