@@ -10,7 +10,7 @@ media_folder: "/Images/cms"
 
 
 editor:
-    preview: false
+  preview: false
 
 collections:
   - name: "article" # Used in routes, e.g., /admin/collections/blog
