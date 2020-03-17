@@ -1,7 +1,7 @@
 <div class="container-fluid oclare-background-color-5">
 <!--News Header-->
     <div class="row">
-        <div class="col-md-offset-8 col-md-4 col-lg-offset-8 col-lg-4 col-sm-12 col-xs-12 oclare-background-default" id="news-header">
+        <div class="col-md-offset-6 col-md-6 col-lg-offset-6 col-lg-6 col-sm-12 col-xs-12 oclare-background-default text-right" id="news-header">
             <h4 class="oclare-color-1">Recent News:</h4>
         </div>
     </div>
@@ -18,7 +18,12 @@
                 </div>
                 <div class="row flex-row">                    
                     <div class="col-md-8 col-sm-12 col-xs-12 padding-left-0">
-                        <img src="{{post.data.image}}" class="media-object article-card">
+                        <img src=
+                        {% if post.data.image == '' %}
+                            "/Images/cms/ArticlePlaceholder.jpg"            
+                        {% else %}
+                            "{{ post.data.image }}"
+                        {% endif %} class="media-object article-card">
                     </div>
                     <div class="col-md-4 col-sm-12 col-xs-12 read-more padding-0">
                         <a href="{{ post.url }}">Read More...</a>
