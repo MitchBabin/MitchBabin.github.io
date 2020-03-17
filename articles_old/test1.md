@@ -1,5 +1,4 @@
 ---
-tags: post
 layout: oclareArticle.njk
 title: Fred Thomas Martin
 image: "/Images/FredThomasMartin.jpg"
