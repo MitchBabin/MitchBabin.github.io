@@ -5,8 +5,7 @@ pagination:
     size: 10
     reverse: true
     alias: posts
-
-permalink: "archive/{{ posts.pageNumber + 1 }}"
+title: Archive
 ---
 {% include "partials/header.njk" %}
 <div class="padding-md oclare-background-default">
@@ -27,8 +26,8 @@ permalink: "archive/{{ posts.pageNumber + 1 }}"
                 <nav aria-labelledby="article-pagination">
                     <h4 class="col-xs-12 padding-x-lg" id="article-pagination">Page:</h4>
                     <ol class="article-pagination">
-                        {% for item in pagination.pages %}
-                            <li class="margin-x-sm"><a href="{{ pagination.hrefs[ loop.index0 ] }}" {% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page" {% endif %}>{{ loop.index }}</a></li>
+                        {% for item in posts %}
+                            <li class="margin-x-sm"><a href="{{ posts.hrefs[ loop.index0 ] }}" {% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page" {% endif %}>{{ loop.index }}</a></li>
                         {% endfor %}
                     </ol>
                 </nav>

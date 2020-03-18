@@ -10,7 +10,7 @@ media_folder: "/Images/cms"
 
 
 editor:
-    preview: false
+  preview: false
 
 collections:
   - name: "article" # Used in routes, e.g., /admin/collections/blog
@@ -37,7 +37,8 @@ collections:
       fields:
         - {label: "Layout", name: "layout", widget: "hidden", default: "oclareHome.njk"}
         - {label: "Title", name: "title", widget: "hidden", default: "Homepage"}
-        - {label: "Title Image", name: "image", widget: "image"}
+        - {label: "Title Image", name: "image", widget: "image"}        
+        - {label: "Body", name: "body", widget: "markdown"}
   
   - name: "documentation" # Used in routes, e.g., /admin/collections/blog
     label: "Documentation" # Used in the UI
