@@ -509,7 +509,7 @@ img {
 }
 
 li::marker {
-    color: white;
+    color: black;
 }
 
 .mLink {
