@@ -1280,7 +1280,8 @@ li:hover {
 #article-content>* {
     width: 100%;
     margin: 0.25em 0 0.25em 0;
-    text-align: justify;
+    padding: 1em 1em 1em 1em;
+    text-align: left;
 }
 
 #article-content a {
