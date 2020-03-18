@@ -1,0 +1,32 @@
+---
+layout: oclareBase.njk
+---
+<!-- Top Row -->
+<div class="padding-sm">
+    <!-- LOGO -->
+    <div class="col-sm-12 col-md-12">
+        <a href="/index.html">
+            <img src="/Images/OCLaRE_Logo.png" class="img-responsive media-object" alt="Logo">
+        </a>
+        <h1>OCLaRE Documentation</h1>
+    </div>
+</div>
+<div class="container padding-md oclare-background-default">
+    <div class="col-md-2 oclare-background-color-5 border border-dark">
+        <ul>
+            <li>
+                <a href="#">Overview</a>
+            </li>
+        {%- for doc in collections.doc -%}
+                <li>
+                    <a href="{{ doc.url }}">{{ doc.data.title }}</a>
+                </li>
+        {%- endfor -%}
+        </ul>
+    </div>
+    <div class="col-md-10">
+        <div class="padding-sm oclare-background-color-5">
+            {{content | safe}}
+        </div>
+    </div>
+</div>
