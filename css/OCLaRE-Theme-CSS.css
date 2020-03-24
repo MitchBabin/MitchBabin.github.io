@@ -169,6 +169,10 @@ input.oclare-color-4:focus {
 
 .oclare-form > form > p > label > input{
     width: 400;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
 }
 
 textarea {
