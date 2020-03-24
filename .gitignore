@@ -457,6 +457,8 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 
+node_modules
+
 tags
 *.sw[op]
 
