@@ -1437,6 +1437,7 @@ li::marker {
 
 #nav-item-collection {
     height: 100%;
+    margin: 0;
 }
 
 #nav-bar img {
