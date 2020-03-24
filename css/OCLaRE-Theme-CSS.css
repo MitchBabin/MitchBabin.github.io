@@ -158,6 +158,40 @@ input.oclare-color-4:focus {
 
 /*#region Defaults*/
 
+.oclare-form{
+    margin-top: auto;
+}
+
+.oclare-form > input{
+    width: 400;
+}
+
+textarea {
+    width: 400;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+.docLink {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.docLink:hover {
+    text-decoration: underline;
+    color: black;
+    font-weight: 500;
+}
+
+.docList{
+    list-style: none
+}
+
 .layout {
     display: grid;
     height: 100vh;
@@ -1095,6 +1129,10 @@ li:hover {
 
 .margin-top-xl {
     margin-top: 3em;
+}
+
+.margin-top-doc {
+    margin-top: 80px;
 }
 
 .margin-right-0 {
