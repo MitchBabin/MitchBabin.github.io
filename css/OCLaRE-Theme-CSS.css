@@ -1376,9 +1376,30 @@ li::marker {
 /*#endregion*/
 
 
-/* #region Recent article styling for tablet */
+/* #region Navbar */
 
-@media screen and (max-width:991px) {}
+#nav-bar {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    background: var(--color2);
+    width: 100%;
+}
+
+.oclare-nav-item {
+    max-width: 16.666666666666666666666666666667%;
+    padding: 1em;
+    min-height: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+a.oclare-nav-item:hover {
+    background: white;
+    color: var(--color2);
+    text-decoration: none;
+}
 
 
 /* #endregion */
