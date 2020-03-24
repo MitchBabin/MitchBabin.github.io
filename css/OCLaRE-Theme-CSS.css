@@ -767,10 +767,6 @@ li::marker {
     z-index: 1;
 }
 
-li:hover {
-    color: white;
-}
-
 .dropdown-menu.list-group {
     margin-top: 0;
     padding-bottom: 20px;
