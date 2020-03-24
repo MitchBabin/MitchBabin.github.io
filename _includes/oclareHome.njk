@@ -3,15 +3,15 @@ layout: oclareBase.njk
 title: Home
 ---
 <!-- Top Row -->
-<div class="container-fluid">
+<div class="container-fluid" id="top-row">
     <!-- LOGO -->
-    <div class="col-sm-12 col-md-3">
+    <div class="col-md-3">
         {% include "partials/logo.njk" %}
     </div>
     <!-- Placeholder image -->
     <div class="col-md-3 hidden-sm hidden-xs">
         <!-- TODO: Fix image layout -->
-        <div class="media row">
+        <div class="media"  id="header-image">
             <img src="{{ image }}" class="img-fluid" alt="Student Chemist">
         </div>
     </div>
@@ -40,8 +40,32 @@ title: Home
         </form>
     </div>
 </div>
+<!-- Second login form for small screens-->
+<div class="visible-xs visible-sm col-sm-12 margin-top-md">
+    <form class="form-horizontal padding-y-sm" action="" method="POST">
+        <div class="form-group">
+            <label class="col-sm-2 control-label" for="email">Email:&nbsp;</label>
+            <div class="col-sm-9">
+                <input type="text" name="email" id="email" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label" for="password">Password:&nbsp;</label>
+            <div class="col-sm-9">
+                <input type="password" name="password" id="password" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-9">
+                <input class="btn btn-outline-default oclare-color-1 oclare-border-color-1" type="submit" value="Login">
+                <input class="btn btn-outline-default oclare-color-2 oclare-border-color-2" type="submit" value="Sign Up">
+                <input class="btn btn-outline-default oclare-color-3 oclare-border-color-3" type="submit" value="Lost Password">
+            </div>
+        </div>
+    </form>
+</div>
 <!--About\News-->
-<div class="container-fluid padding-md oclare-background-default">
+<div class="oclare-background-default margin-y-sm" id="home-body">
     <div class="col-md-7">
         <!--About OCLaRE-->
         <div class="container-fluid padding-y-sm  oclare-background-color-5">
@@ -52,33 +76,6 @@ title: Home
                 {# <a href="#">read more...</a> #}
             </div>
         </div>
-    </div>
-    <!-- Second login form for small screens-->
-    <div class="visible-xs visible-sm col-sm-12 margin-top-md">
-        <form class="form-horizontal padding-y-sm oclare-border-color-1" action="" method="POST">
-            <div class="form-group">
-                <h4><label class="control-label col-sm-2">Login:</label></h4>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-2 control-label" for="email">Email:&nbsp;</label>
-                <div class="col-sm-9">
-                    <input type="text" name="email" id="email" class="form-control">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-2 control-label" for="password">Password:&nbsp;</label>
-                <div class="col-sm-9">
-                    <input type="password" name="password" id="password" class="form-control">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-9">
-                    <input class="btn btn-outline-default oclare-color-1 oclare-border-color-1" type="submit" value="Login">
-                    <input class="btn btn-outline-default oclare-color-2 oclare-border-color-2" type="submit" value="Sign Up">
-                    <input class="btn btn-outline-default oclare-color-3 oclare-border-color-3" type="submit" value="Lost Password">
-                </div>
-            </div>
-        </form>
     </div>
     <div class="col-md-5 col-sm-12">
         <!--News/Articles-->
