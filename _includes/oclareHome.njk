@@ -3,11 +3,8 @@ layout: oclareBase.njk
 title: Home
 ---
 <!-- Top Row -->
-<div class="container-fluid" id="top-row">
-    <!-- LOGO -->
-    <div class="col-md-3">
-        {% include "partials/logo.njk" %}
-    </div>
+{% include "partials/header.njk" %}
+<div id="top-row">    
     <!-- Placeholder image -->
     <div class="col-md-3 hidden-sm hidden-xs">
         <!-- TODO: Fix image layout -->
@@ -16,7 +13,7 @@ title: Home
         </div>
     </div>
     <!-- Login Form for medium to large screens -->
-    <div class="col-md-6 hidden-sm hidden-xs">
+    <div class="col-md-6 col-md-offset-3 hidden-sm hidden-xs">
         <form class="form-horizontal" action="" method="POST">
             <div class="form-group">
                 <label class="col-sm-3 control-label" for="email">Email:&nbsp;</label>

@@ -1,4 +1,4 @@
-/*#region Oclare text colors*/
+/*#region Oclare Text Colors*/
 
 .oclare-color-1 {
     color: var(--color1);
@@ -22,45 +22,6 @@
 
 
 /*#endregion */
-
-
-/*#region Input with oclare color functionality*/
-
-input.oclare-color-1:hover,
-input.oclare-color-1:active,
-input.oclare-color-1:focus {
-    color: white;
-    background-color: var(--color1);
-    outline: 5px auto var(--color1Transparent)
-}
-
-input.oclare-color-2:hover,
-input.oclare-color-2:active,
-input.oclare-color-2:focus {
-    color: white;
-    background-color: var(--color2);
-    outline: 5px auto var(--color2Transparent);
-}
-
-input.oclare-color-3:hover,
-input.oclare-color-3:active,
-input.oclare-color-3:focus {
-    color: white;
-    background-color: var(--color3);
-    outline: 5px auto var(--color3Transparent)
-}
-
-input.oclare-color-4:hover,
-input.oclare-color-4:active,
-input.oclare-color-4:focus {
-    color: white;
-    background-color: var(--color4);
-    color: var(--color4);
-    outline: 5px auto var(--color4Transparent)
-}
-
-
-/*#endregion*/
 
 
 /*#region Oclare border colors*/
@@ -123,9 +84,49 @@ input.oclare-color-4:focus {
 /*#endregion */
 
 
-/*#region Oclare Theme Colors*/
+/*#region Input with oclare color functionality*/
+
+input.oclare-color-1:hover,
+input.oclare-color-1:active,
+input.oclare-color-1:focus {
+    color: white;
+    background-color: var(--color1);
+    outline: 5px auto var(--color1Transparent)
+}
+
+input.oclare-color-2:hover,
+input.oclare-color-2:active,
+input.oclare-color-2:focus {
+    color: white;
+    background-color: var(--color2);
+    outline: 5px auto var(--color2Transparent);
+}
+
+input.oclare-color-3:hover,
+input.oclare-color-3:active,
+input.oclare-color-3:focus {
+    color: white;
+    background-color: var(--color3);
+    outline: 5px auto var(--color3Transparent)
+}
+
+input.oclare-color-4:hover,
+input.oclare-color-4:active,
+input.oclare-color-4:focus {
+    color: white;
+    background-color: var(--color4);
+    color: var(--color4);
+    outline: 5px auto var(--color4Transparent)
+}
+
+
+/*#endregion*/
+
+
+/*#region Oclare Theme Variables*/
 
 :root {
+    /* Theme Colors */
     --oclare-background: #F1F2F4;
     --color1: rgb(23, 75, 131);
     --color1Transparent: rgba(23, 75, 131, 0.5);
@@ -158,11 +159,11 @@ input.oclare-color-4:focus {
 
 /*#region Defaults*/
 
-.oclare-form{
+.oclare-form {
     margin-top: auto;
 }
 
-.oclare-form > input{
+.oclare-form>input {
     width: 400;
 }
 
@@ -188,7 +189,7 @@ textarea {
     font-weight: 500;
 }
 
-.docList{
+.docList {
     list-style: none
 }
 
@@ -1416,28 +1417,44 @@ li::marker {
 
 /* #region Navbar */
 
-#nav-bar {
+#nav-bar,
+#nav-item-collection {
     display: flex;
-    justify-content: flex-start;
     flex-wrap: nowrap;
     align-items: center;
     background: var(--color2);
     width: 100%;
+    margin-bottom: .5em;
+}
+
+#nav-bar img {
+    float: left;
+    padding: .5em;
 }
 
 .oclare-nav-item {
     max-width: 16.666666666666666666666666666667%;
-    padding: 1em;
+    padding: 0 1em;
     min-height: 100%;
+}
+
+a.oclare-nav-item {
     color: white;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 a.oclare-nav-item:hover {
-    background: white;
+    background: var(--oclare-background);
     color: var(--color2);
     text-decoration: none;
 }
+
+
+/* Tablet */
+
+@media screen and (max-width: 991px) and (min-width: 767) {}
 
 
 /* #endregion */
