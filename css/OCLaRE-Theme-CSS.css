@@ -163,8 +163,17 @@ input.oclare-color-4:focus {
     margin-top: auto;
 }
 
-.oclare-form>input {
+.oclare-form>h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.oclare-form>form>p>label>input {
     width: 400;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
 }
 
 textarea {
@@ -430,7 +439,6 @@ img {
 
 @media screen and (max-width: 991px) {
     #header-logo {
-        max-width: 50%;
         margin: auto;
     }
     .article-div {
@@ -1425,6 +1433,10 @@ li::marker {
     background: var(--color2);
     width: 100%;
     margin-bottom: .5em;
+}
+
+#nav-item-collection {
+    height: 100%;
 }
 
 #nav-bar img {
