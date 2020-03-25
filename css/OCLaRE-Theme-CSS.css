@@ -291,6 +291,14 @@ img {
 #tablet-footer,
 #phone-footer {
     margin-block-start: auto;
+    padding: 0 .5em;
+    justify-content: space-between;
+}
+
+#footer-bar>.footer:first-child,
+#tablet-footer>.footer:first-child,
+#phone-footer>.footer:first-child {
+    padding-left: .5em;
 }
 
 .footer {
@@ -308,18 +316,9 @@ img {
     max-height: 30px;
 }
 
-.footer>.footer {
-    padding-left: 1em;
-}
-
-.footer-col {
-    margin-left: .25em;
-    margin-right: .25em;
-}
-
 .footer-col img {
-    padding-top: .25em;
-    padding-bottom: .25em;
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
 
 .read-more {
@@ -332,6 +331,7 @@ img {
 @media (max-width: 991px) and (min-width: 768px) {
     #tablet-footer {
         display: flex!important;
+        justify-content: space-around;
     }
     .read-more {
         width: 100%;
@@ -389,7 +389,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #article-image {
@@ -425,11 +425,10 @@ img {
 }
 
 .flex-row>a>img {
-    padding: 0em .5em 0em .5em;
     height: 20px;
-    min-width: 33px;
     margin-top: auto;
     margin-bottom: auto;
+    padding: 0 .5em;
 }
 
 #oclare-logo {
@@ -437,10 +436,16 @@ img {
     padding-right: 0;
 }
 
+#header-logo {
+    max-width: 16.666666666666666666666666666667%;
+    min-width: 130px;
+    margin: auto;
+    float: left;
+    padding: .25em 0;
+    padding-left: 1em;
+}
+
 @media screen and (max-width: 991px) {
-    #header-logo {
-        margin: auto;
-    }
     .article-div {
         display: flex;
         flex-direction: column;
@@ -1429,26 +1434,33 @@ li::marker {
 #nav-item-collection {
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;
     background: var(--color2);
     width: 100%;
     margin-bottom: .5em;
 }
 
 #nav-item-collection {
-    height: 100%;
     margin: 0;
 }
 
-#nav-bar img {
-    float: left;
-    padding: .5em;
-}
-
 .oclare-nav-item {
-    max-width: 16.666666666666666666666666666667%;
     padding: 0 1em;
     min-height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    #nav-bar {
+        flex-wrap: wrap;
+    }
+    #header-logo {
+        margin: auto;
+    }
+    #nav-item-collection {
+        justify-content: space-around;
+    }
+    .oclare-nav-item {
+        padding: 0;
+    }
 }
 
 a.oclare-nav-item {

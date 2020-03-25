@@ -11,12 +11,14 @@ title: Archive
 <div class="padding-md oclare-background-default">
     <div class="col-md-12">
         <div class="oclare-background-color-5">
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 oclare-background-default" id="article-header">
-                <h3 class="padding-top-sm oclare-color-1 margin-top-xs">Articles: </h3>
+            <div class="row margin-0">
+                <div class="col-xs-7 col-sm-3 col-md-2 col-lg-2 oclare-background-default" id="article-header">
+                    <h3 class="padding-top-sm oclare-color-1 margin-top-xs">Articles: </h3>
+                </div>
             </div>
             {% for post in posts %}
                 <div class="padding-y-sm article-title">
-                    <div class="col-xs-12 col-lg-12 padding-x-md">
+                    <div class="w100 padding-x-md">
                         <a href="{{ post.url }}"><h4 class="oclare-color-2"><em>{{ post.data.title }}</em></h4></a>
                     </div>                 
                 </div>
@@ -34,9 +36,8 @@ title: Archive
             </div>
             <form action="https://www.google.com/search" method="get" class="flex-row flex-end margin-0 oclare-background-color-5">
                 <input type="hidden" name="q" id="q" value="site:https://oclare.netlify.com">
-                <div class="oclare-background-default padding-sm padding-left-md"  id="search-label">
-                    <label for="q" class="control-label oclare-color-1">Search:</label>
-                    <input type="text" name="q" id="search-str" class="margin-x-xs">
+                <div class="oclare-background-default padding-sm padding-left-md text-center"  id="search-label">                    
+                    <input type="text" name="q" placeholder="Search" id="search-str" class="margin-x-sm">
                     <button type="submit" class="submit">Search with Google</button>
                 </div>
             </form>
