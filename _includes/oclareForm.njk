@@ -6,6 +6,7 @@ title: Contact Us
 {% include "partials/header.njk" %}
 <div class="container-fluid padding-md oclare-background-color-5 panel panel-default oclare-form">
     <h1>{{content | safe}}</h1>
+    <a href="{{ collections.doc[0].url }}">Need help? Click here to try OCLaRE documentation.</a><br>
     <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
         <p>
             <label>Your Name:</br> <input type="text" name="name" /></label>   

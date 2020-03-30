@@ -163,6 +163,16 @@ input.oclare-color-4:focus {
     margin-top: auto;
 }
 
+.form-backing{
+    background-color: var(--oclare-background);
+}
+
+@media (min-width: 767px) {
+    .form-backing {
+        background-color: white;
+    }
+}
+
 .oclare-form>h1 {
     text-align: center;
     text-decoration: underline;
