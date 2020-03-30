@@ -16,12 +16,7 @@ CODE FOR BLOCKING CLICKS:
 
 11ty.dev
 
-center tablet footer, add space -
-makes mobile footer images smaller and oclare logo -
-remove "login", replace with header logo on mobile -
-
-center mobile recent news items 
-blur header image of homepage (science girl)
+make footer and header symetric in side spacing
 
 
 Contact us form, 400px wide and tall, add space
