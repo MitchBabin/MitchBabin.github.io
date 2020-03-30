@@ -1,4 +1,5 @@
 ---
-layout: oclareForm.njk
+layout: oclareFormBug.njk
+title: 'Bug Report'
 ---
-Bug Report
+Need help? Try O'CLaRE documentation.

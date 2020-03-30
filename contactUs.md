@@ -1,4 +1,5 @@
 ---
 layout: oclareForm.njk
+title: 'Contact Us'
 ---
-Contact Us
+Need help? Try O'CLaRE documentation.

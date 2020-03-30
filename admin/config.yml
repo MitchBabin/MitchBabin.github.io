@@ -39,6 +39,24 @@ collections:
         - {label: "Title", name: "title", widget: "hidden", default: "Homepage"}
         - {label: "Title Image", name: "image", widget: "image"}        
         - {label: "Body", name: "body", widget: "markdown"}
+    - label: "Contact Us"
+      name: "contactus"
+      file: "/contactUs.md"
+      create: false
+      delete: false
+      fields:
+        - {label: "Layout", name: "layout", widget: "hidden", default: "oclareForm.njk"}
+        - {label: "Title", name: "title", widget: "string", default: "Contact Us"}      
+        - {label: "Body", name: "body", widget: "markdown"}
+    - label: "Bug Report"
+      name: "bugreport"
+      file: "/bugReport.md"
+      create: false
+      delete: false
+      fields:
+        - {label: "Layout", name: "layout", widget: "hidden", default: "oclareFormBug.njk"}
+        - {label: "Title", name: "title", widget: "string", default: "Bug Report"}      
+        - {label: "Body", name: "body", widget: "markdown"}
   
   - name: "documentation" # Used in routes, e.g., /admin/collections/blog
     label: "Documentation" # Used in the UI
