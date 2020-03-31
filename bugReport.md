@@ -1,5 +1,5 @@
 ---
 layout: oclareFormBug.njk
-title: 'Bug Report'
+title: Bug Report
 ---
-Need help? Try O'CLaRE documentation.
+[Need help? Try O'CLaRE documentation. ](/documentation)
