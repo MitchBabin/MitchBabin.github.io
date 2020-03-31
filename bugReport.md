@@ -2,4 +2,4 @@
 layout: oclareFormBug.njk
 title: Bug Report
 ---
-[Need help? Try O'CLaRE documentation. ](/documentation)
+[Need help? Try OCLaRE documentation. ](/documentation)
