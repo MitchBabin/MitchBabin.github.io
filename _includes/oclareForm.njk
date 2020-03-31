@@ -5,7 +5,9 @@ layout: oclareBase.njk
 {% include "partials/header.njk" %}
 <div class="container-fluid padding-md oclare-background-color-5 panel panel-default oclare-form">
     <h1>{{ title }}</h1>
-    <a href="{{ collections.doc[0].url }}">{{content | safe}}</a><br>
+    <div class="content">
+        {{content | safe}}
+    </div>
     <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
         <p>
             <label>Your Name:</br> <input type="text" name="name" /></label>   
