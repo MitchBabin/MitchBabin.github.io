@@ -23,7 +23,7 @@ The `in` keyword checks for a specific string in a student input, returning true
 
 ### Class Computed Fields
 
-To use the class's collective data for any given field, simply use the same name in all capital letters. You can apply statistical transformations to those groups of data such as mean or standard deviation using the name of the function before the bracketed value. For example, to get the mean of a class's input named iron_concentration you would use MEAN(IRON_CONCENTRATION).
+To use the class's collective data for any given field, simply use the same name in all capital letters. You can apply statistical transformations to those groups of data such as mean or standard deviation using the name of the function before the bracketed value. For example, to get the mean of a class's input named `iron_concentration` you would use `MEAN(IRON_CONCENTRATION)`.
 
 ### Significant Figures
 
@@ -33,51 +33,51 @@ The significant figures input dictates what decimal point the field will round t
 
 #### The following functions are those which operate on a single value
 
-* LN (Natural logarithm)
-* LOG (Logarithm)
-* SQRT (Square root)
-* COS (Cosine)
-* SIN (Sine)
-* TAN (Tangent)
-* ACOS (Arc Cosine)
-* ASIN (Arc Sine)
-* ATAN (Arc Tangent)
-* COSH (Hyperbolic Cosine)
-* SINH (Hyperbolic Sine)
-* TANH (Hyperbolic Tangent)
-* ACOSH (Hyperbolic Arc Cosine)
-* ASINH (Hyperbolic Arc Sine)
-* ATANH (Hyperbolic Arc Tangent)
-* ABS (Absolute Value)
+* `LN` (Natural logarithm)
+* `LOG` (Logarithm)
+* `SQRT` (Square root)
+* `COS` (Cosine)
+* `SIN` (Sine)
+* `TAN` (Tangent)
+* `ACOS` (Arc Cosine)
+* `ASIN` (Arc Sine)
+* `ATAN` (Arc Tangent)
+* `COSH` (Hyperbolic Cosine)
+* `SINH` (Hyperbolic Sine)
+* `TANH` (Hyperbolic Tangent)
+* `ACOSH` (Hyperbolic Arc Cosine)
+* `ASINH` (Hyperbolic Arc Sine)
+* `ATANH` (Hyperbolic Arc Tangent)
+* `ABS` (Absolute Value)
 
 #### The following functions take two arguments
 
-* POW (Power: Returns the first argument raised to the power of the second argument)
-* ROUND (Rounding: Returns the argument one rounded to argument two decimal places)
+* `POW` (Power: Returns the first argument raised to the power of the second argument)
+* `ROUND` (Rounding: Returns the argument one rounded to argument two decimal places)
 
 #### These functions operate on a list of values
 
-* MAX (Returns the maximum value in a list)
-* MIN (Returns the minimum value in a list)
-* SUM (Returns the sum of values in the list)
-* LEN (Returns the count of how many values are in the list)
-* MEAN (Returns the mean of the values in the list)
-* STDDEV (Returns the standard deviation of the values in the list)
-* MEDIAN (Returns the median value of the list)
+* `MAX` (Returns the maximum value in a list)
+* `MIN` (Returns the minimum value in a list)
+* `SUM` (Returns the sum of values in the list)
+* `LEN` (Returns the count of how many values are in the list)
+* `MEAN` (Returns the mean of the values in the list)
+* `STDDEV` (Returns the standard deviation of the values in the list)
+* `MEDIAN` (Returns the median value of the list)
 
 #### Logical operators
 
-* IF (condition, true value, false value) 
+* `IF` (condition, true value, false value) 
 
 #### The R function
 
 The R function and must be called with a string representing an R statement, worth noting is that triple quotes (ie """statement""") can be used which allow for multi-line statements
 
-* R
+* `R`
 
 #### Constants
 
 The following constants are defined as well:
 
-* E
-* PI
+* `E`
+* `PI`
