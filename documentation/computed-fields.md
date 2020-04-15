@@ -11,15 +11,31 @@ While you can use the R scripting language to compute fields, you don't need pri
 
 ### Mathmatical Operators
 
-Computed fields support all the basic mathematical operators, addition, subtraction, division and multiplication, and in correct order of operations. You can also use exponents by using `**` to raise the left number to the power of the right. Additionally, computed fields support modulus, which calculates the remainder of a division. You can use modulus by using the `%` symbol.\
-\
-Note that student inputs should be number fields when you want to create computed fields from them , as string or text fields may cause unforseen errors.
+Computed fields support all the basic mathematical operators, addition, subtraction, division and multiplication, and in correct order of operations. You can also use exponents by using `**` to raise the left number to the power of the right. Additionally, computed fields support modulus, which calculates the remainder of a division. You can use modulus by using the `%` symbol.
+
+Note that student inputs should be number fields when you want to create computed fields from them , as string or text fields may cause unforeseen errors.
+
+#### Availabler Mathematical Operators
+
+* `+` (Addition)
+* `-` (Subtraction)
+* `/` (Division)
+* `%` (Modulus, or remainder)
 
 ### Logical Operators
 
-Logical operators produce one of two results, true or false, which are presented by `1` and `0` respectively. Computed fields supports `<` (less than), `<=` (less than or equal to), `>` (greater than), `>=` (greater than or equal to) as well as `==` (equals) and `in`. Like mathematical operators, they can only be applied to numbers except for the `in` keyword and the `==` comparator.\
-\
+Logical operators produce one of two results, true or false, which are presented by `1` and `0` respectively. Computed fields supports `<` (less than), `<=` (less than or equal to), `>` (greater than), `>=` (greater than or equal to) as well as `==` (equals) and `in`. Like mathematical operators, they can only be applied to numbers except for the `in` keyword and the `==` comparator.
+
 The `in` keyword checks for a specific string in a student input, returning true if found, and false otherwise. This is different from the `==` operator, in that the `==` operator only returns true if the strings are exactly the same, including capitalization.
+
+#### Available Logical Operators
+
+* `==` (Equality)
+* `in` (Contained within)
+* `>` (Greater than)
+* `<` (Less than)
+* `>=` (Greater than or equal to)
+* `<=` (Less than or equal to)
 
 ### Class Computed Fields
 
