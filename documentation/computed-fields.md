@@ -15,7 +15,7 @@ Computed fields support all the basic mathematical operators, addition, subtract
 
 Note that student inputs should be number fields when you want to create computed fields from them , as string or text fields may cause unforeseen errors.
 
-#### Availabler Mathematical Operators
+#### Available Mathematical Operators
 
 * `+` (Addition)
 * `-` (Subtraction)
