@@ -19,8 +19,10 @@ Note that student inputs should be number fields when you want to create compute
 
 * `+` (Addition)
 * `-` (Subtraction)
+* `*` (Multiplication)
 * `/` (Division)
 * `%` (Modulus, or remainder)
+* `**` (Exponent)
 
 ### Logical Operators
 
