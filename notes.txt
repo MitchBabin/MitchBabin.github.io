@@ -16,7 +16,10 @@ CODE FOR BLOCKING CLICKS:
 
 11ty.dev
 
-make footer and header symetric in side spacing
-
-
-Contact us form, 400px wide and tall, add space
+Tables
+Data-Flow (fields in and outs)
+Computed Fields (excel-like methods, r code)
+Bibliographies
+News/Articles
+Homepage
+Contact Us/Bug Report
