@@ -9,7 +9,7 @@ tags:
 
 If you want to add a reference either when creating a lab, or in a large text input as a student, you must first find its BibTex notation on either [Google Scholar](https://scholar.google.ca/), [Zbib](https://zbib.org/), or any online library that offers such a service.
 
-#### Aquiring BibTex Notation
+#### Acquiring BibTex Notation
 
 First, lookup the name of the reference on your scholar search engine of choice. The following examples will use Google Scholar.
 
