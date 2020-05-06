@@ -15,11 +15,11 @@ First, lookup the name of the reference on your scholar search engine of choice.
 
 Look up and find the article you wish to cite, and click on the quotations icon
 
-![Cite Icon](/Images/cms/annotation-2020-05-05-133228.png)
+![Cite Icon](/Images/cms/annotation-2020-05-05-133228.png "Google Scholar Search Results")
 
 Which will open a window similar to the following:
 
-![Cite Window](/Images/cms/annotation-2020-05-05-13322.png)
+![Cite Window](/Images/cms/annotation-2020-05-05-13322.png "Google Scholar Cite Window")
 
 In the bottom left, click BibTex to generate the BibTex code. It will look something along the lines of this:
 
