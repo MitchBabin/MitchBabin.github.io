@@ -15,9 +15,13 @@ First, lookup the name of the reference on your scholar search engine of choice.
 
 Look up and find the article you wish to cite, and click on the quotations icon
 
+#### Google Scholar Search Results
+
 ![Cite Icon](/Images/cms/annotation-2020-05-05-133228.png "Google Scholar Search Results")
 
 Which will open a window similar to the following:
+
+#### Google Scholar Cite Window
 
 ![Cite Window](/Images/cms/annotation-2020-05-05-13322.png "Google Scholar Cite Window")
 
