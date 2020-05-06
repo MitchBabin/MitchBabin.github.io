@@ -137,3 +137,7 @@ The Computed Fields function allow calculations to be performed and displayed ba
   Here is where the output of the report can be finalized. Additionally, it allows the addition of an abstract at the beginning of the report.
 
   ![](https://lh3.googleusercontent.com/WP_0KGfE9spIiFGWNjpdHEx-jIlmu2Jdy0E2lgxTBMzpykbTPfBgPJccBG6XateR8uATm3H-MTHVsBU9RRtR2f1XZYCt5-FMViwFinlVYX4A6hNWSJEo5rTVPgOvoUKg83fKa8JP)
+
+## Hot-Keys
+
+The following shortcuts work in any editor window to modify or add features:
